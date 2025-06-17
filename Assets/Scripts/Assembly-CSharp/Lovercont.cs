@@ -281,7 +281,8 @@ public class Lovercont : MonoBehaviour
 
 	public void Setgem_img()
 	{
-		if (favor < 100)
+		return; // feature removed for simplicity
+        if (favor < 100)
 		{
 			gem_img[0].SetActive(true);
 			gem_img[1].SetActive(false);
