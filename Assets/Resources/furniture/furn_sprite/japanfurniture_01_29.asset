@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: japanfurniture_01_29
+  m_Rect:
+    serializedVersion: 2
+    x: 394.0761
+    y: 341
+    width: 85.84776
+    height: 37.923878
+  m_Offset: {x: 5.1169254E-06, y: 1.5380616}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 1
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: f25aed79a5b9115459e0e6ec653da394, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 29, y: -17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 28, y: -15.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 28, y: -17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 43, y: 17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 32, y: -20.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 43, y: -20.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 28, y: -20.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -28, y: -15.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -32, y: -20.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -29, y: -17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -39, y: -20.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -43, y: 17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -43, y: -17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: 29, y: -19.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -28, y: -17.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -29, y: -19.5, z: 0}
+    - serializedVersion: 2
+      pos: {x: -29, y: -20.5, z: 0}
+    indices: 0e000900070010000f000600090006000f000e0006000900070006000e00060002000d0000000d0002000c000b000a0003000a000b0007000a00030008000a000700090008000700010007000300060007000100020006000100000001000300040000000300050004000300020001000000
+    textureRect:
+      serializedVersion: 2
+      x: 394.0761
+      y: 341
+      width: 85.84776
+      height: 37.923878
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 1, y: 437, z: 1, w: 361.5}

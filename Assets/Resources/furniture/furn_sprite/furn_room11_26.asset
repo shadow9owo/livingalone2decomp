@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: furn_room11_26
+  m_Rect:
+    serializedVersion: 2
+    x: 121
+    y: 445
+    width: 56
+    height: 67
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 100
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: 106aa521fd0db6e41ae44eb45d522b71, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 0.26, y: 0.305, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.28, y: -0.125, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.28, y: 0.185, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.23, y: 0.335, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.18, y: -0.335, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.17, y: 0.255, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.15, y: 0.235, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.04, y: 0.235, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.03, y: 0.335, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.02, y: 0.255, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.01, y: 0.325, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.16, y: 0.235, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.09, y: 0.235, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.25, y: 0.265, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.26, y: -0.335, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.28, y: 0.255, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.28, y: -0.245, z: 0}
+    indices: 10000f000e000d000e000f0004000e000d000c0004000d00070004000c000600040007000b0004000600050004000b000a0008000900070009000800030007000800060007000300050006000300040005000300010004000300000001000300020001000000
+    textureRect:
+      serializedVersion: 2
+      x: 121
+      y: 445
+      width: 56
+      height: 67
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 100, y: 149, z: 100, w: 478.5}
