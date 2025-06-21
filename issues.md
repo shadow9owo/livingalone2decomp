@@ -6,3 +6,5 @@ repeatedly opening and doing a night out will cause the part time menu to open i
 
 game is capped at an abysmal frame rate
 too scared to uncap to not cause fps bugs
+
+i fucked up the sudden deaths
