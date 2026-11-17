@@ -403,7 +403,7 @@ public class S2_4 : MonoBehaviour
 		E_class = PlayerPrefs.GetInt("E_class");
 		change_hair = SheetOrder.LoadAll("Head_man");
 		change_hair_2 = SheetOrder.LoadAll("Head_woman");
-        change_hair_3 = change_hair.Concat(change_hair_2).ToArray();
+        change_hair_3 = SheetOrder.LoadAll("Head_woman_man"); // original: Resources.LoadAll<Sprite>("Head_woman,man")
         uni_clo_sprite_m = SheetOrder.LoadAll("Clothes_man");
 		uni_clo_sprite_m_2 = SheetOrder.LoadAll("Clothes_man_2");
 		uni_clo_sprite_w = SheetOrder.LoadAll("Clothes_woman");

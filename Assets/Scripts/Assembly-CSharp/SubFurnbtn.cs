@@ -514,4 +514,154 @@ public class SubFurnbtn : MonoBehaviour
 			anim_japan.GetComponent<Furnanim_japan>().room17_tv();
 		}
 	}
+
+	public void Death_1()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_1();
+	}
+
+	public void Death_7()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_7();
+	}
+
+	public void Death_4()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_4();
+	}
+
+	public void Death_33()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_33();
+	}
+
+	public void Death_31()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_31();
+	}
+
+	public void Death_26()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_26();
+	}
+
+	public void Death_13()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_13();
+	}
+
+	public void Death_22()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_22();
+	}
+
+	public void Death_5()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_5();
+	}
+
+	public void Death_47()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_47();
+	}
+
+	public void Death_3()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_3();
+	}
+
+	public void Death_27()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_27();
+	}
+
+	public void Death_17()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_17();
+	}
+
+	public void Death_29()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_29();
+	}
+
+	public void Death_25()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_25();
+	}
+
+	public void Death_58()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_58();
+	}
+
+	public void Death_52()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_52();
+	}
+
+	public void Death_54()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_54();
+	}
+
+	public void Death_51()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_51();
+	}
+
+	public void Death_55()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_55();
+	}
+
+	public void Death_32()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_32();
+	}
+
+	public void Death_30()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_30();
+	}
+
+	public void Death_50()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_50();
+	}
+
+	public void Death_56()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_56();
+	}
+
+	public void Death_46()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_46();
+	}
+
+	public void Death_43()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_43();
+	}
+
+	public void Death_59()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_59();
+	}
+
+	public void Death_57()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_57();
+	}
+
+	public void Death_53()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_53();
+	}
+
+	public void Death_40()
+	{
+		suddendeath.GetComponent<SuddenDeathCont>().Death_40();
+	}
 }

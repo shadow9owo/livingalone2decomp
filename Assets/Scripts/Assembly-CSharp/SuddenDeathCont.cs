@@ -258,7 +258,6 @@ public class SuddenDeathCont : MonoBehaviour
 
 	private void Start()
 	{
-		return;
 		_Timecont = GameObject.Find("TimeController");
 		Death_Count = PlayerPrefs.GetInt("Death_Count");
 		TimeCont.OneMonth = PlayerPrefs.GetInt("OneMonth");
@@ -396,18 +395,17 @@ public class SuddenDeathCont : MonoBehaviour
 		Circle_main = PlayerPrefs.GetInt("Circle_main");
 		if (Circle_main == 1)
 		{
-			Circle_main_obj.SetActive(true);
+			Circle_main_obj.SetActive(value: true);
 		}
 		else
 		{
-			Circle_main_obj.SetActive(false);
+			Circle_main_obj.SetActive(value: false);
 		}
 	}
 
 	public void RealendingMoney()
 	{
-        return;
-        if (RoomCont.Room_N == 1)
+		if (RoomCont.Room_N == 1)
 		{
 			SuddenDeahtPlusmoney = 100000;
 		}
@@ -483,12 +481,12 @@ public class SuddenDeathCont : MonoBehaviour
 		Alba_BarCont.AlbaDeath10 = PlayerPrefs.GetInt("AlbaDeath10");
 		if (allreport.activeInHierarchy || MonthlyReport.activeInHierarchy || FinalDeath.activeInHierarchy || VacaImage.activeInHierarchy || TutorialCont.Tutorial_Int == 0)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		if (TimeCont.Grade == 4 && TimeCont.OneMonth == 1 && BarCont.st <= 0.01f)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		if (Alba_BarCont.AlbaDeath1 >= 2 && Alba_BarCont.AlbaDeath1 < 5)
@@ -619,7 +617,7 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AdsBtn()
 	{
-		SuddenDeathScreen.SetActive(false);
+		SuddenDeathScreen.SetActive(value: false);
 		PlayerPrefs.SetInt("Rebirth_OK", 1);
 		scene_controll.gem += SuddenDeahtPlusGem;
 		SPrefs.SetInt("gem2", scene_controll.gem);
@@ -629,14 +627,777 @@ public class SuddenDeathCont : MonoBehaviour
 		PlayerPrefs.SetInt("Circle_main", 1);
 		Circle_frust = PlayerPrefs.GetInt("Circle_frust");
 		Circle_main = PlayerPrefs.GetInt("Circle_main");
-		Circle_main_obj.SetActive(true);
+		Circle_main_obj.SetActive(value: true);
 		SuddenDeahtPlusGem = 0;
+	}
+
+	public void Death_14()
+	{
+		Gameover_btn.SetActive(value: true);
+		Indure_btn.SetActive(value: false);
+		ReasonDeath_N = 2;
+		if (Death_14F == 0)
+		{
+			RealendingMoney();
+			ReasonSuddenDeath();
+		}
+		if (Death_14F == 1)
+		{
+			RealendingMoney();
+			AgainNAgainDeath();
+		}
+	}
+
+	public void Death_23()
+	{
+		Gameover_btn.SetActive(value: true);
+		Indure_btn.SetActive(value: false);
+		ReasonDeath_N = 6;
+		if (Death_23F == 0)
+		{
+			RealendingMoney();
+			ReasonSuddenDeath();
+		}
+		if (Death_23F == 1)
+		{
+			RealendingMoney();
+			AgainNAgainDeath();
+		}
+	}
+
+	public void Death_16()
+	{
+		Gameover_btn.SetActive(value: true);
+		Indure_btn.SetActive(value: false);
+		ReasonDeath_N = 3;
+		if (Death_16F == 0)
+		{
+			RealendingMoney();
+			ReasonSuddenDeath();
+		}
+		if (Death_16F == 1)
+		{
+			RealendingMoney();
+			AgainNAgainDeath();
+		}
+		Debug.Log("SuddenDeahtPlusmoney" + SuddenDeahtPlusmoney);
+	}
+
+	public void Death_1()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 1;
+		if (Death_1F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+		False_1();
+	}
+
+	public void Deaht_2()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 2;
+		if (Death_2F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_7()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 7;
+		if (Death_7F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+		False_7();
+	}
+
+	public void Death_38()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		ReasonDeath_N = 10;
+		if (Death_38F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			ReasonSuddenDeath();
+		}
+	}
+
+	public void Death_19()
+	{
+		if (!allreport.activeInHierarchy && !MonthlyReport.activeInHierarchy && !FinalDeath.activeInHierarchy && !VacaImage.activeInHierarchy && TutorialCont.Tutorial_Int != 0 && (TimeCont.Grade != 4 || TimeCont.OneMonth != 1 || !(BarCont.st <= 0.01f)) && !SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 4;
+			if (Death_19F == 0)
+			{
+				SuddenDeahtPlusGem = 2;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_4()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 4;
+		if (Death_4F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+		False_4();
+	}
+
+	public void Death_33()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 33;
+		if (Death_33F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+		False_33();
+	}
+
+	public void Death_10()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 10;
+		if (Death_10F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_39()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		ReasonDeath_N = 11;
+		if (Death_39F == 0)
+		{
+			SuddenDeahtPlusGem = 1;
+			ReasonSuddenDeath();
+		}
+	}
+
+	public void Death_26()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 26;
+		if (Death_26F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_26();
+	}
+
+	public void Death_31()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 31;
+		if (Death_31F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_31();
+	}
+
+	public void Death_9()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 9;
+		if (Death_9F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_18()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 18;
+		if (Death_18F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_20()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 5;
+			if (Death_20F == 0)
+			{
+				SuddenDeahtPlusGem = 2;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_13()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 13;
+		if (Death_13F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_13();
+	}
+
+	public void Death_22()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 22;
+		if (Death_22F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_22();
+	}
+
+	public void Death_5()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 5;
+		if (Death_5F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_5();
+	}
+
+	public void Death_24()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 24;
+		if (Death_24F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_41()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		ReasonDeath_N = 13;
+		if (Death_41F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			ReasonSuddenDeath();
+		}
+	}
+
+	public void Death_47()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 47;
+		if (Death_47F == 0)
+		{
+			SuddenDeahtPlusGem = 2;
+			SuddenDeath();
+		}
+		False_47();
+	}
+
+	public void Death_35()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 7;
+			if (Death_35F == 0)
+			{
+				SuddenDeahtPlusGem = 5;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_3()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 3;
+		if (Death_3F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+		False_3();
+	}
+
+	public void Death_27()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 27;
+		if (Death_27F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+		False_27();
+	}
+
+	public void Death_6()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 6;
+		if (Death_6F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_12()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 12;
+		if (Death_12F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_17()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 17;
+		if (Death_17F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+		False_17();
+	}
+
+	public void Death_29()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 29;
+		if (Death_29F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+		False_29();
+	}
+
+	public void Death_36()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 8;
+			if (Death_36F == 0)
+			{
+				SuddenDeahtPlusGem = 4;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_28()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 28;
+		if (Death_28F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_44()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 44;
+		if (Death_44F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_25()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 25;
+		if (Death_25F == 0)
+		{
+			SuddenDeahtPlusGem = 3;
+			SuddenDeath();
+		}
+		False_25();
+	}
+
+	public void Death_52()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 52;
+		if (Death_52F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+		False_52();
+	}
+
+	public void Death_58()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 58;
+		if (Death_58F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+		False_58();
+	}
+
+	public void Death_51()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 51;
+		if (Death_51F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+		False_51();
+	}
+
+	public void Death_54()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 54;
+		if (Death_54F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+		False_54();
+	}
+
+	public void Death_11()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 11;
+		if (Death_11F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_15()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 15;
+		if (Death_15F == 0)
+		{
+			SuddenDeahtPlusGem = 4;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_48()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 14;
+			if (Death_48F == 0)
+			{
+				SuddenDeahtPlusGem = 5;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_30()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 30;
+		if (Death_30F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_30();
+	}
+
+	public void Death_32()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 32;
+		if (Death_32F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_32();
+	}
+
+	public void Death_55()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 55;
+		if (Death_55F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_55();
+	}
+
+	public void Death_34()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 34;
+		if (Death_34F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_21()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 21;
+		if (Death_21F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_45()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 45;
+		if (Death_45F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_37()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 9;
+			if (Death_37F == 0)
+			{
+				SuddenDeahtPlusGem = 5;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_50()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 50;
+		if (Death_50F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_50();
+	}
+
+	public void Death_56()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 56;
+		if (Death_56F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_56();
+	}
+
+	public void Death_46()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 46;
+		if (Death_46F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_46();
+	}
+
+	public void Death_43()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 43;
+		if (Death_43F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_43();
+	}
+
+	public void Death_42()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 42;
+		if (Death_42F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+	}
+
+	public void Death_59()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 59;
+		if (Death_59F == 0)
+		{
+			SuddenDeahtPlusGem = 5;
+			SuddenDeath();
+		}
+		False_59();
+	}
+
+	public void Death_57()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 57;
+		if (Death_57F == 0)
+		{
+			SuddenDeahtPlusGem = 6;
+			SuddenDeath();
+		}
+		False_57();
+	}
+
+	public void Death_53()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		SuddenDeath_N = 53;
+		if (Death_53F == 0)
+		{
+			SuddenDeahtPlusGem = 6;
+			SuddenDeath();
+		}
+		False_53();
+	}
+
+	public void Death_49()
+	{
+		if (!SuddenDeathScreen.activeInHierarchy)
+		{
+			Gameover_btn.SetActive(value: false);
+			Indure_btn.SetActive(value: true);
+			ReasonDeath_N = 15;
+			if (Death_49F == 0)
+			{
+				SuddenDeahtPlusGem = 7;
+				ReasonSuddenDeath();
+			}
+		}
+	}
+
+	public void Death_40()
+	{
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
+		ReasonDeath_N = 12;
+		if (Death_40F == 0)
+		{
+			SuddenDeahtPlusGem = 6;
+			ReasonSuddenDeath();
+		}
+		False_40();
 	}
 
 	public void AlbaDeath_1()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 1;
 		if (AlbaDeath_1F == 0)
 		{
@@ -647,8 +1408,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_2()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 2;
 		if (AlbaDeath_2F == 0)
 		{
@@ -659,8 +1420,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_3()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 3;
 		if (AlbaDeath_3F == 0)
 		{
@@ -671,8 +1432,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_4()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 4;
 		if (AlbaDeath_4F == 0)
 		{
@@ -683,8 +1444,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_5()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 5;
 		if (AlbaDeath_5F == 0)
 		{
@@ -695,8 +1456,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_6()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 6;
 		if (AlbaDeath_6F == 0)
 		{
@@ -707,8 +1468,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_7()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 7;
 		if (AlbaDeath_7F == 0)
 		{
@@ -719,8 +1480,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_8()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 8;
 		if (AlbaDeath_8F == 0)
 		{
@@ -731,8 +1492,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_9()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 9;
 		if (AlbaDeath_9F == 0)
 		{
@@ -743,8 +1504,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_10()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 10;
 		if (AlbaDeath_10F == 0)
 		{
@@ -755,8 +1516,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_11()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 11;
 		if (AlbaDeath_11F == 0)
 		{
@@ -767,8 +1528,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_12()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 12;
 		if (AlbaDeath_12F == 0)
 		{
@@ -779,8 +1540,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_13()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 13;
 		if (AlbaDeath_13F == 0)
 		{
@@ -791,8 +1552,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_14()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 14;
 		if (AlbaDeath_14F == 0)
 		{
@@ -803,8 +1564,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_15()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 15;
 		if (AlbaDeath_15F == 0)
 		{
@@ -815,8 +1576,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_16()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 16;
 		if (AlbaDeath_16F == 0)
 		{
@@ -827,8 +1588,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_17()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 17;
 		if (AlbaDeath_17F == 0)
 		{
@@ -839,8 +1600,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_18()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 18;
 		if (AlbaDeath_18F == 0)
 		{
@@ -851,8 +1612,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_19()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 19;
 		if (AlbaDeath_19F == 0)
 		{
@@ -863,8 +1624,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_20()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 20;
 		if (AlbaDeath_20F == 0)
 		{
@@ -875,8 +1636,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_21()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 21;
 		if (AlbaDeath_21F == 0)
 		{
@@ -887,8 +1648,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_22()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 22;
 		if (AlbaDeath_22F == 0)
 		{
@@ -899,8 +1660,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_23()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 23;
 		if (AlbaDeath_23F == 0)
 		{
@@ -911,8 +1672,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_24()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 24;
 		if (AlbaDeath_24F == 0)
 		{
@@ -923,8 +1684,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_25()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 25;
 		if (AlbaDeath_25F == 0)
 		{
@@ -935,8 +1696,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_26()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 26;
 		if (AlbaDeath_26F == 0)
 		{
@@ -947,8 +1708,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_27()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 27;
 		if (AlbaDeath_27F == 0)
 		{
@@ -959,8 +1720,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_28()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 28;
 		if (AlbaDeath_28F == 0)
 		{
@@ -971,8 +1732,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_29()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 29;
 		if (AlbaDeath_29F == 0)
 		{
@@ -983,8 +1744,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_30()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 30;
 		if (AlbaDeath_30F == 0)
 		{
@@ -995,8 +1756,8 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void AlbaDeath_31()
 	{
-		Gameover_btn.SetActive(false);
-		Indure_btn.SetActive(true);
+		Gameover_btn.SetActive(value: false);
+		Indure_btn.SetActive(value: true);
 		OtherDeath_N = 31;
 		if (AlbaDeath_31F == 0)
 		{
@@ -1007,7 +1768,6 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void SavaDehat_Num()
 	{
-		return;
 		PPlus_money = 0;
 		if (SuddenDeath_N == 1)
 		{
@@ -1476,14 +2236,13 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void SuddenDeath()
 	{
-		return;
 		if (allreport.activeInHierarchy || FinalDeath.activeInHierarchy || VacaImage.activeInHierarchy || TutorialCont.Tutorial_Int == 0)
 		{
 			return;
 		}
 		if (TimeCont.Grade == 4 && TimeCont.OneMonth == 1 && BarCont.st <= 0f)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		_suddenSound.SuddenDeath_();
@@ -1491,9 +2250,11 @@ public class SuddenDeathCont : MonoBehaviour
 		PPlus_money = PlayerPrefs.GetInt("PPlus_money");
 		if (ButtonCont.Vibrate_int == 0)
 		{
-			
+#if UNITY_ANDROID || UNITY_IOS
+			Handheld.Vibrate();
+#endif
 		}
-		SuddenDeathScreen.SetActive(true);
+		SuddenDeathScreen.SetActive(value: true);
 		Image component = SuddenDeahtImgObj.GetComponent<Image>();
 		if (SuddenDeath_N == 0)
 		{
@@ -1738,256 +2499,256 @@ public class SuddenDeathCont : MonoBehaviour
 		}
 		if (SuddenDeath_N == 1)
 		{
-			component2.text = string.Format("Eeeek! A wild cricket appeared!");
+			component2.text = $"Eeeek! A wild cricket appeared!";
 		}
 		if (SuddenDeath_N == 2)
 		{
-			component2.text = string.Format("Water drop from the ceiling");
+			component2.text = $"Water drop from the ceiling";
 		}
 		if (SuddenDeath_N == 3)
 		{
-			component2.text = string.Format("Do you know where this dust is coming from?");
+			component2.text = $"Do you know where this dust is coming from?";
 		}
 		if (SuddenDeath_N == 4)
 		{
-			component2.text = string.Format("Fire in th hole!!");
+			component2.text = $"Fire in th hole!!";
 		}
 		if (SuddenDeath_N == 5)
 		{
-			component2.text = string.Format("Drosophilas hatche eggs. Oh it's terrible.");
+			component2.text = $"Drosophilas hatche eggs. Oh it's terrible.";
 		}
 		if (SuddenDeath_N == 6)
 		{
-			component2.text = string.Format("Today is the payday, but the boss went missing?");
+			component2.text = $"Today is the payday, but the boss went missing?";
 		}
 		if (SuddenDeath_N == 7)
 		{
-			component2.text = string.Format("It tastes like hell.");
+			component2.text = $"It tastes like hell.";
 		}
 		if (SuddenDeath_N == 9)
 		{
-			component2.text = string.Format("I forgot to turn off the heater!!!!! ");
+			component2.text = $"I forgot to turn off the heater!!!!! ";
 		}
 		if (SuddenDeath_N == 10)
 		{
-			component2.text = string.Format("Wild Ekans... no, a snake appeared... (Unable to speak...)");
+			component2.text = $"Wild Ekans... no, a snake appeared... (Unable to speak...)";
 		}
 		if (SuddenDeath_N == 11)
 		{
-			component2.text = string.Format("I think I see someone every night, but I live alone...");
+			component2.text = $"I think I see someone every night, but I live alone...";
 		}
 		if (SuddenDeath_N == 12)
 		{
-			component2.text = string.Format("I wonder how they are doing. It's more than 10years ago.");
+			component2.text = $"I wonder how they are doing. It's more than 10years ago.";
 		}
 		if (SuddenDeath_N == 13)
 		{
-			component2.text = string.Format("A thief!! Let’s lock the door well.");
+			component2.text = $"A thief!! Let’s lock the door well.";
 		}
 		if (SuddenDeath_N == 14)
 		{
-			component2.text = string.Format("I got F at test!");
+			component2.text = $"I got F at test!";
 		}
 		if (SuddenDeath_N == 15)
 		{
-			component2.text = string.Format("I can hear the classmates talking outside the bathroom.");
+			component2.text = $"I can hear the classmates talking outside the bathroom.";
 		}
 		if (SuddenDeath_N == 16)
 		{
-			component2.text = string.Format("It sucks when you get sick when you're living alone.");
+			component2.text = $"It sucks when you get sick when you're living alone.";
 		}
 		if (SuddenDeath_N == 17)
 		{
-			component2.text = string.Format("Even plunger doesn't work!");
+			component2.text = $"Even plunger doesn't work!";
 		}
 		if (SuddenDeath_N == 18)
 		{
-			component2.text = string.Format("In-Seoul University Selected as One of the Worst!!?");
+			component2.text = $"In-Seoul University Selected as One of the Worst!!?";
 		}
 		if (SuddenDeath_N == 19)
 		{
-			component2.text = string.Format("Finally I raise a cat! So adorable!");
+			component2.text = $"Finally I raise a cat! So adorable!";
 		}
 		if (SuddenDeath_N == 20)
 		{
-			component2.text = string.Format("House dust mites and dust... On top of that, I have a runny nose... >sniffle<");
+			component2.text = $"House dust mites and dust... On top of that, I have a runny nose... >sniffle<";
 		}
 		if (SuddenDeath_N == 21)
 		{
-			component2.text = string.Format("I don't need your advice. Mind your own business.");
+			component2.text = $"I don't need your advice. Mind your own business.";
 		}
 		if (SuddenDeath_N == 22)
 		{
-			component2.text = string.Format("It's ant's house, not mine.");
+			component2.text = $"It's ant's house, not mine.";
 		}
 		if (SuddenDeath_N == 23)
 		{
-			component2.text = string.Format("No money? It’s a game over. Capitalism is cold-blooded.");
+			component2.text = $"No money? It’s a game over. Capitalism is cold-blooded.";
 		}
 		if (SuddenDeath_N == 24)
 		{
-			component2.text = string.Format("I came back from the vacation, and my major disappeared from the department?!! What do I do now?");
+			component2.text = $"I came back from the vacation, and my major disappeared from the department?!! What do I do now?";
 		}
 		if (SuddenDeath_N == 25)
 		{
-			component2.text = string.Format("Fermentation is not science. It just means upset stomach.");
+			component2.text = $"Fermentation is not science. It just means upset stomach.";
 		}
 		if (SuddenDeath_N == 26)
 		{
-			component2.text = string.Format("Sliding in the bathroom!!! Thank goodness, I didn't die!");
+			component2.text = $"Sliding in the bathroom!!! Thank goodness, I didn't die!";
 		}
 		if (SuddenDeath_N == 27)
 		{
-			component2.text = string.Format("108 missed phone calls... I was supposed to do a presentation today...");
+			component2.text = $"108 missed phone calls... I was supposed to do a presentation today...";
 		}
 		if (SuddenDeath_N == 28)
 		{
-			component2.text = string.Format("The pain of parting is so hurt.");
+			component2.text = $"The pain of parting is so hurt.";
 		}
 		if (SuddenDeath_N == 29)
 		{
-			component2.text = string.Format("hought it was my house, but it was actually the cockroach's’ house.");
+			component2.text = $"hought it was my house, but it was actually the cockroach's’ house.";
 		}
 		if (SuddenDeath_N == 30)
 		{
-			component2.text = string.Format("I actually have a hobby that I can’t tell the others.");
+			component2.text = $"I actually have a hobby that I can’t tell the others.";
 		}
 		if (SuddenDeath_N == 31)
 		{
-			component2.text = string.Format("I stumped my pinky toe to the corner of the bed!!!");
+			component2.text = $"I stumped my pinky toe to the corner of the bed!!!";
 		}
 		if (SuddenDeath_N == 32)
 		{
-			component2.text = string.Format("The best part of living alone is drinking all night!");
+			component2.text = $"The best part of living alone is drinking all night!";
 		}
 		if (SuddenDeath_N == 33)
 		{
-			component2.text = string.Format("I've been living off of convenience store lunchbox... It’s really getting old.");
+			component2.text = $"I've been living off of convenience store lunchbox... It’s really getting old.";
 		}
 		if (SuddenDeath_N == 34)
 		{
-			component2.text = string.Format("Why does it seem like I didn't get paid properly??");
+			component2.text = $"Why does it seem like I didn't get paid properly??";
 		}
 		if (SuddenDeath_N == 35)
 		{
-			component2.text = string.Format("The road is a scary place... Revenge driving is scary....");
+			component2.text = $"The road is a scary place... Revenge driving is scary....";
 		}
 		if (SuddenDeath_N == 36)
 		{
-			component2.text = string.Format("I am glad to save money for eggs!!!");
+			component2.text = $"I am glad to save money for eggs!!!";
 		}
 		if (SuddenDeath_N == 37)
 		{
-			component2.text = string.Format("My pet was a natural monument? No way.");
+			component2.text = $"My pet was a natural monument? No way.";
 		}
 		if (SuddenDeath_N == 38)
 		{
-			component2.text = string.Format("My head is boiling... I’m too weak...");
+			component2.text = $"My head is boiling... I’m too weak...";
 		}
 		if (SuddenDeath_N == 39)
 		{
-			component2.text = string.Format("Brain on!! 2+2x2=8??!");
+			component2.text = $"Brain on!! 2+2x2=8??!";
 		}
 		if (SuddenDeath_N == 40)
 		{
-			component2.text = string.Format("It's cold... Both my physical strength and mental strength are at their limit!");
+			component2.text = $"It's cold... Both my physical strength and mental strength are at their limit!";
 		}
 		if (SuddenDeath_N == 41)
 		{
-			component2.text = string.Format("I could not pay my rent, and I was immediately kicked out.");
+			component2.text = $"I could not pay my rent, and I was immediately kicked out.";
 		}
 		if (SuddenDeath_N == 42)
 		{
-			component2.text = string.Format("M... Mom and Dad? Please let me know in advance when you’re going to come.");
+			component2.text = $"M... Mom and Dad? Please let me know in advance when you’re going to come.";
 		}
 		if (SuddenDeath_N == 43)
 		{
-			component2.text = string.Format("I am Hermione in my school.");
+			component2.text = $"I am Hermione in my school.";
 		}
 		if (SuddenDeath_N == 44)
 		{
-			component2.text = string.Format("I'm so lonely. This city is too cold.");
+			component2.text = $"I'm so lonely. This city is too cold.";
 		}
 		if (SuddenDeath_N == 45)
 		{
-			component2.text = string.Format("Found plastic in pizza!");
+			component2.text = $"Found plastic in pizza!";
 		}
 		if (SuddenDeath_N == 46)
 		{
-			component2.text = string.Format("Don't you stop shooting missiles?");
+			component2.text = $"Don't you stop shooting missiles?";
 		}
 		if (SuddenDeath_N == 47)
 		{
-			component2.text = string.Format("A centipede!!! How many legs do you have?");
+			component2.text = $"A centipede!!! How many legs do you have?";
 		}
 		if (SuddenDeath_N == 48)
 		{
-			component2.text = string.Format("I am chosen to go on a trip to the underwater palace!");
+			component2.text = $"I am chosen to go on a trip to the underwater palace!";
 		}
 		if (SuddenDeath_N == 49)
 		{
-			component2.text = string.Format("I am chosen to take a walk to the heaven...");
+			component2.text = $"I am chosen to take a walk to the heaven...";
 		}
 		if (SuddenDeath_N == 50)
 		{
-			component2.text = string.Format("No. Hot. Water.");
+			component2.text = $"No. Hot. Water.";
 		}
 		if (SuddenDeath_N == 51)
 		{
-			component2.text = string.Format("What is that in the mirror?! A ghost?!");
+			component2.text = $"What is that in the mirror?! A ghost?!";
 		}
 		if (SuddenDeath_N == 52)
 		{
-			component2.text = string.Format("I had a terrible nightmare. Someone sing me a lullaby...");
+			component2.text = $"I had a terrible nightmare. Someone sing me a lullaby...";
 		}
 		if (SuddenDeath_N == 53)
 		{
-			component2.text = string.Format("Food shortage!! Who ate it all?! (I did.)");
+			component2.text = $"Food shortage!! Who ate it all?! (I did.)";
 		}
 		if (SuddenDeath_N == 54)
 		{
-			component2.text = string.Format("My feet stinks... Deodorant is useless...");
+			component2.text = $"My feet stinks... Deodorant is useless...";
 		}
 		if (SuddenDeath_N == 55)
 		{
-			component2.text = string.Format("Guys, My house is not hotel..");
+			component2.text = $"Guys, My house is not hotel..";
 		}
 		if (SuddenDeath_N == 56)
 		{
-			component2.text = string.Format("The smell of dirty sewers! It's even worse today!!");
+			component2.text = $"The smell of dirty sewers! It's even worse today!!";
 		}
 		if (SuddenDeath_N == 57)
 		{
-			component2.text = string.Format("zzZ... This semester is doomed... More like my life is doomed.");
+			component2.text = $"zzZ... This semester is doomed... More like my life is doomed.";
 		}
 		if (SuddenDeath_N == 58)
 		{
-			component2.text = string.Format("My reports are deleted all! This must bedream!");
+			component2.text = $"My reports are deleted all! This must bedream!";
 		}
 		if (SuddenDeath_N == 59)
 		{
-			component2.text = string.Format("Boiler is broken and I slept like polar bear.");
+			component2.text = $"Boiler is broken and I slept like polar bear.";
 		}
-		Money_T.GetComponent<Text>().text = string.Format("{0:n0}", SuddenDeahtPlusGem);
+		Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusGem:n0}";
 		CountDeahtCont();
 		SavaDehat_Num();
 		PlayerPrefs.SetInt("Circle_frust", 1);
 		PlayerPrefs.SetInt("Circle_main", 1);
 		Circle_frust = PlayerPrefs.GetInt("Circle_frust");
 		Circle_main = PlayerPrefs.GetInt("Circle_main");
-		Circle_main_obj.SetActive(true);
+		Circle_main_obj.SetActive(value: true);
 	}
 
 	public void ReasonSuddenDeath()
 	{
 		if (allreport.activeInHierarchy || FinalDeath.activeInHierarchy || VacaImage.activeInHierarchy || TutorialCont.Tutorial_Int == 0)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		if (TimeCont.Grade == 4 && TimeCont.OneMonth == 1)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		_suddenSound.SuddenDeath_();
@@ -1995,9 +2756,11 @@ public class SuddenDeathCont : MonoBehaviour
 		PPlus_money = PlayerPrefs.GetInt("PPlus_money");
 		if (ButtonCont.Vibrate_int == 0)
 		{
-			
+#if UNITY_ANDROID || UNITY_IOS
+			Handheld.Vibrate();
+#endif
 		}
-		SuddenDeathScreen.SetActive(true);
+		SuddenDeathScreen.SetActive(value: true);
 		Image component = SuddenDeahtImgObj.GetComponent<Image>();
 		if (ReasonDeath_N == 0)
 		{
@@ -2066,78 +2829,78 @@ public class SuddenDeathCont : MonoBehaviour
 		}
 		if (ReasonDeath_N == 2)
 		{
-			component2.text = string.Format("I got F at test!");
+			component2.text = $"I got F at test!";
 		}
 		if (ReasonDeath_N == 3)
 		{
-			component2.text = string.Format("It's cold... Both my physical strength and mental strength are at their limit!");
+			component2.text = $"It's cold... Both my physical strength and mental strength are at their limit!";
 		}
 		if (ReasonDeath_N == 4)
 		{
-			component2.text = string.Format("Finally I raise a cat! So adorable!");
+			component2.text = $"Finally I raise a cat! So adorable!";
 		}
 		if (ReasonDeath_N == 5)
 		{
-			component2.text = string.Format("House dust mites and dust... On top of that, I have a runny nose... >sniffle<");
+			component2.text = $"House dust mites and dust... On top of that, I have a runny nose... >sniffle<";
 		}
 		if (ReasonDeath_N == 6)
 		{
-			component2.text = string.Format("No money? It’s a game over. Capitalism is cold-blooded.");
+			component2.text = $"No money? It’s a game over. Capitalism is cold-blooded.";
 		}
 		if (ReasonDeath_N == 7)
 		{
-			component2.text = string.Format("The road is a scary place... Revenge driving is scary....");
+			component2.text = $"The road is a scary place... Revenge driving is scary....";
 		}
 		if (ReasonDeath_N == 8)
 		{
-			component2.text = string.Format("I am glad to save money for eggs!!");
+			component2.text = $"I am glad to save money for eggs!!";
 		}
 		if (ReasonDeath_N == 9)
 		{
-			component2.text = string.Format("My pet was a natural monument? No way.");
+			component2.text = $"My pet was a natural monument? No way.";
 		}
 		if (ReasonDeath_N == 10)
 		{
-			component2.text = string.Format("My head is boiling... I’m too weak...");
+			component2.text = $"My head is boiling... I’m too weak...";
 		}
 		if (ReasonDeath_N == 11)
 		{
-			component2.text = string.Format("Brain on! 2+2x2=8??");
+			component2.text = $"Brain on! 2+2x2=8??";
 		}
 		if (ReasonDeath_N == 12)
 		{
-			component2.text = string.Format("I'm so sick. I don't have power to talk.");
+			component2.text = $"I'm so sick. I don't have power to talk.";
 		}
 		if (ReasonDeath_N == 13)
 		{
-			component2.text = string.Format("The rent is too expensive. It's too much.");
+			component2.text = $"The rent is too expensive. It's too much.";
 		}
 		if (ReasonDeath_N == 14)
 		{
-			component2.text = string.Format("I am chosen to go on a trip to the underwater palace!");
+			component2.text = $"I am chosen to go on a trip to the underwater palace!";
 		}
 		if (ReasonDeath_N == 15)
 		{
-			component2.text = string.Format("I am chosen to take a walk to the heaven...");
+			component2.text = $"I am chosen to take a walk to the heaven...";
 		}
 		if (ReasonDeath_N != 2 && ReasonDeath_N != 3 && ReasonDeath_N != 6)
 		{
-			Money_T.GetComponent<Text>().text = string.Format("{0}", SuddenDeahtPlusGem);
+			Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusGem}";
 			MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[0];
 		}
 		if (ReasonDeath_N == 2)
 		{
-			Money_T.GetComponent<Text>().text = string.Format("{0:n0}G", SuddenDeahtPlusmoney);
+			Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusmoney:n0}G";
 			MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[1];
 		}
 		if (ReasonDeath_N == 3)
 		{
-			Money_T.GetComponent<Text>().text = string.Format("{0:n0}G", SuddenDeahtPlusmoney);
+			Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusmoney:n0}G";
 			MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[1];
 		}
 		if (ReasonDeath_N == 6)
 		{
-			Money_T.GetComponent<Text>().text = string.Format("{0:n0}G", SuddenDeahtPlusmoney);
+			Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusmoney:n0}G";
 			MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[1];
 		}
 		CountDeahtCont();
@@ -2146,19 +2909,19 @@ public class SuddenDeathCont : MonoBehaviour
 		PlayerPrefs.SetInt("Circle_main", 1);
 		Circle_frust = PlayerPrefs.GetInt("Circle_frust");
 		Circle_main = PlayerPrefs.GetInt("Circle_main");
-		Circle_main_obj.SetActive(true);
+		Circle_main_obj.SetActive(value: true);
 	}
 
 	public void OtherSuddenDeath()
 	{
 		if (allreport.activeInHierarchy || FinalDeath.activeInHierarchy || VacaImage.activeInHierarchy || TutorialCont.Tutorial_Int == 0)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		if (TimeCont.Grade == 4 && TimeCont.OneMonth == 1 && BarCont.st <= 0f)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		_suddenSound.SuddenDeath_();
@@ -2166,9 +2929,11 @@ public class SuddenDeathCont : MonoBehaviour
 		PPlus_money = PlayerPrefs.GetInt("PPlus_money");
 		if (ButtonCont.Vibrate_int == 0)
 		{
-			
+#if UNITY_ANDROID || UNITY_IOS
+			Handheld.Vibrate();
+#endif
 		}
-		SuddenDeathScreen.SetActive(true);
+		SuddenDeathScreen.SetActive(value: true);
 		Image component = SuddenDeahtImgObj.GetComponent<Image>();
 		if (OtherDeath_N == 19)
 		{
@@ -2301,129 +3066,129 @@ public class SuddenDeathCont : MonoBehaviour
 		}
 		if (OtherDeath_N == 19)
 		{
-			component2.text = string.Format("Why am I getting fired?! I’m getting fired by text message??");
+			component2.text = $"Why am I getting fired?! I’m getting fired by text message??";
 		}
 		if (OtherDeath_N == 18)
 		{
-			component2.text = string.Format("Why they keep pooping on my head?!");
+			component2.text = $"Why they keep pooping on my head?!";
 		}
 		if (OtherDeath_N == 13)
 		{
-			component2.text = string.Format("My Leaflets are fluttering!!");
+			component2.text = $"My Leaflets are fluttering!!";
 		}
 		if (OtherDeath_N == 29)
 		{
-			component2.text = string.Format("Doesn’t seem like an average kid!");
+			component2.text = $"Doesn’t seem like an average kid!";
 		}
 		if (OtherDeath_N == 1)
 		{
-			component2.text = string.Format("We don't sale dimsum...");
+			component2.text = $"We don't sale dimsum...";
 		}
 		if (OtherDeath_N == 21)
 		{
-			component2.text = string.Format("Someone dropped the hamburger on the floor!!");
+			component2.text = $"Someone dropped the hamburger on the floor!!";
 		}
 		if (OtherDeath_N == 3)
 		{
-			component2.text = string.Format("Trash in the trash can! I'm not a trash can.");
+			component2.text = $"Trash in the trash can! I'm not a trash can.";
 		}
 		if (OtherDeath_N == 31)
 		{
-			component2.text = string.Format("Coin Rush! All coins?!");
+			component2.text = $"Coin Rush! All coins?!";
 		}
 		if (OtherDeath_N == 28)
 		{
-			component2.text = string.Format("Only my appearance looks like a thief, I'm not really.");
+			component2.text = $"Only my appearance looks like a thief, I'm not really.";
 		}
 		if (OtherDeath_N == 26)
 		{
-			component2.text = string.Format("Ugh, drunk much? Here he comes again.");
+			component2.text = $"Ugh, drunk much? Here he comes again.";
 		}
 		if (OtherDeath_N == 6)
 		{
-			component2.text = string.Format("Another thief! I’ll get him next time.");
+			component2.text = $"Another thief! I’ll get him next time.";
 		}
 		if (OtherDeath_N == 2)
 		{
-			component2.text = string.Format("A customer left after touching and making a mess with all the clothes!!");
+			component2.text = $"A customer left after touching and making a mess with all the clothes!!";
 		}
 		if (OtherDeath_N == 20)
 		{
-			component2.text = string.Format("A rude customer appeared! My head hurts already.");
+			component2.text = $"A rude customer appeared! My head hurts already.";
 		}
 		if (OtherDeath_N == 10)
 		{
-			component2.text = string.Format("Other part timers are bring super mean. I cry again.");
+			component2.text = $"Other part timers are bring super mean. I cry again.";
 		}
 		if (OtherDeath_N == 16)
 		{
-			component2.text = string.Format("Cool hot black coffee doesn't exist in this world sir.");
+			component2.text = $"Cool hot black coffee doesn't exist in this world sir.";
 		}
 		if (OtherDeath_N == 23)
 		{
-			component2.text = string.Format("I gave a customer a shower... with coffee.");
+			component2.text = $"I gave a customer a shower... with coffee.";
 		}
 		if (OtherDeath_N == 17)
 		{
-			component2.text = string.Format("Mistake! Big mistake! The manager doesn’t look very happy today.");
+			component2.text = $"Mistake! Big mistake! The manager doesn’t look very happy today.";
 		}
 		if (OtherDeath_N == 14)
 		{
-			component2.text = string.Format("Hey, you there, the steak is salty. Take it back.");
+			component2.text = $"Hey, you there, the steak is salty. Take it back.";
 		}
 		if (OtherDeath_N == 30)
 		{
-			component2.text = string.Format("I spilled all plates on the trolley");
+			component2.text = $"I spilled all plates on the trolley";
 		}
 		if (OtherDeath_N == 25)
 		{
-			component2.text = string.Format("I almost die under boxes.");
+			component2.text = $"I almost die under boxes.";
 		}
 		if (OtherDeath_N == 8)
 		{
-			component2.text = string.Format("I was hit by a backing truck while being careless.");
+			component2.text = $"I was hit by a backing truck while being careless.";
 		}
 		if (OtherDeath_N == 9)
 		{
-			component2.text = string.Format("I twisted my back for overworking. I spent all my money on pain relief patches.");
+			component2.text = $"I twisted my back for overworking. I spent all my money on pain relief patches.";
 		}
 		if (OtherDeath_N == 4)
 		{
-			component2.text = string.Format("Please calm down sir..");
+			component2.text = $"Please calm down sir..";
 		}
 		if (OtherDeath_N == 24)
 		{
-			component2.text = string.Format("I was stung by a reprimand.");
+			component2.text = $"I was stung by a reprimand.";
 		}
 		if (OtherDeath_N == 5)
 		{
-			component2.text = string.Format("The eyes of the manager who is watching my every move... I can feel it with the back of my head.");
+			component2.text = $"The eyes of the manager who is watching my every move... I can feel it with the back of my head.";
 		}
 		if (OtherDeath_N == 7)
 		{
-			component2.text = string.Format("Leaving footstep on the... cement.");
+			component2.text = $"Leaving footstep on the... cement.";
 		}
 		if (OtherDeath_N == 15)
 		{
-			component2.text = string.Format("Something exploded! The unfortunate thing is that I was standing there.");
+			component2.text = $"Something exploded! The unfortunate thing is that I was standing there.";
 		}
 		if (OtherDeath_N == 22)
 		{
-			component2.text = string.Format("I keep working and working, but there is no end to it.");
+			component2.text = $"I keep working and working, but there is no end to it.";
 		}
 		if (OtherDeath_N == 12)
 		{
-			component2.text = string.Format("I came in time, but no student came to class.");
+			component2.text = $"I came in time, but no student came to class.";
 		}
 		if (OtherDeath_N == 11)
 		{
-			component2.text = string.Format("Student keeps asking what I don't know. I can't keep pretending like I know everything.");
+			component2.text = $"Student keeps asking what I don't know. I can't keep pretending like I know everything.";
 		}
 		if (OtherDeath_N == 27)
 		{
-			component2.text = string.Format("My student got a 0 on the test. Maybe I actually suck at teaching.");
+			component2.text = $"My student got a 0 on the test. Maybe I actually suck at teaching.";
 		}
-		Money_T.GetComponent<Text>().text = string.Format("{0}", SuddenDeahtPlusGem);
+		Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusGem}";
 		MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[0];
 		CountDeahtCont();
 		SavaDehat_Num();
@@ -2431,21 +3196,19 @@ public class SuddenDeathCont : MonoBehaviour
 		PlayerPrefs.SetInt("Circle_main", 1);
 		Circle_frust = PlayerPrefs.GetInt("Circle_frust");
 		Circle_main = PlayerPrefs.GetInt("Circle_main");
-		Circle_main_obj.SetActive(true);
+		Circle_main_obj.SetActive(value: true);
 	}
 
 	public void AgainNAgainDeath()
 	{
-		//USELESS FEATURE GET RID OF il return before it can fuck shit up
-		return;
 		if (allreport.activeInHierarchy || FinalDeath.activeInHierarchy || VacaImage.activeInHierarchy || TutorialCont.Tutorial_Int == 0)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		if (TimeCont.Grade == 4 && TimeCont.OneMonth == 1 && BarCont.st <= 0f)
 		{
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			return;
 		}
 		_suddenSound.SuddenDeath_();
@@ -2453,9 +3216,11 @@ public class SuddenDeathCont : MonoBehaviour
 		PPlus_money = PlayerPrefs.GetInt("PPlus_money");
 		if (ButtonCont.Vibrate_int == 0)
 		{
-			
+#if UNITY_ANDROID || UNITY_IOS
+			Handheld.Vibrate();
+#endif
 		}
-		SuddenDeathScreen.SetActive(true);
+		SuddenDeathScreen.SetActive(value: true);
 		Image component = SuddenDeahtImgObj.GetComponent<Image>();
 		if (ReasonDeath_N == 2)
 		{
@@ -2472,17 +3237,17 @@ public class SuddenDeathCont : MonoBehaviour
 		Text component2 = SuddenDeathText.GetComponent<Text>();
 		if (ReasonDeath_N == 2)
 		{
-			component2.text = string.Format("I got F at test!");
+			component2.text = $"I got F at test!";
 		}
 		if (ReasonDeath_N == 3)
 		{
-			component2.text = string.Format("It's cold... Both my physical strength and mental strength are at their limit!");
+			component2.text = $"It's cold... Both my physical strength and mental strength are at their limit!";
 		}
 		if (ReasonDeath_N == 6)
 		{
-			component2.text = string.Format("No money? It’s a game over. Capitalism is cold-blooded.");
+			component2.text = $"No money? It’s a game over. Capitalism is cold-blooded.";
 		}
-		Money_T.GetComponent<Text>().text = string.Format("{0:n0}G", SuddenDeahtPlusmoney);
+		Money_T.GetComponent<Text>().text = $"{SuddenDeahtPlusmoney:n0}G";
 		MoneyIcon.GetComponent<Image>().sprite = MoneyIcon_img[1];
 		SavaDehat_Num();
 	}
@@ -2495,7 +3260,7 @@ public class SuddenDeathCont : MonoBehaviour
 			scene_controll.gem -= 3;
 			SPrefs.SetInt("gem2", scene_controll.gem);
 			scene_controll.gem = SPrefs.GetInt("gem2");
-			SuddenDeathScreen.SetActive(false);
+			SuddenDeathScreen.SetActive(value: false);
 			PlayerPrefs.SetInt("Rebirth_OK", 1);
 			Debug.Log("SuddenDeahtPlusmoney" + SuddenDeahtPlusmoney);
 			scene_controll.money += SuddenDeahtPlusmoney;
@@ -2509,7 +3274,7 @@ public class SuddenDeathCont : MonoBehaviour
 					Death_14F = 0;
 					return;
 				}
-				OtherSuddenDeath();
+				Death_14();
 				ReportCont.Grade_N = 0;
 				return;
 			}
@@ -2559,18 +3324,18 @@ public class SuddenDeathCont : MonoBehaviour
 		}
 		else
 		{
-			Nogem.SetActive(true);
+			Nogem.SetActive(value: true);
 		}
 	}
 
 	public void CloseNogem()
 	{
-		Nogem.SetActive(false);
+		Nogem.SetActive(value: false);
 	}
 
 	public void BtnRebirth()
 	{
-		SuddenDeathScreen.SetActive(false);
+		SuddenDeathScreen.SetActive(value: false);
 		SaveCount();
 		PlayerPrefs.SetInt("Rebirth_OK", 1);
 		scene_controll.money += SuddenDeahtPlusmoney;
@@ -2588,135 +3353,135 @@ public class SuddenDeathCont : MonoBehaviour
 
 	public void Reallyrebirth()
 	{
-		Really.SetActive(true);
+		Really.SetActive(value: true);
 	}
 
 	public void NOrebirth()
 	{
-		Really.SetActive(false);
+		Really.SetActive(value: false);
 	}
 
 	public void SetFalseButton()
 	{
 		if (Death_1F == 1 && FurnCont.Bed_N == 1)
 		{
-			GameObject.Find("Death_1").SetActive(false);
+			GameObject.Find("Death_1").SetActive(value: false);
 		}
 		if (Death_7F == 1 && FurnCont.Kitchen_N == 2 && RoomCont.Room_N == 1)
 		{
-			GameObject.Find("Death_7").SetActive(false);
+			GameObject.Find("Death_7").SetActive(value: false);
 		}
 		if (Death_33F == 1 && FurnCont.Kitchen_N == 4)
 		{
-			GameObject.Find("Death_33").SetActive(false);
+			GameObject.Find("Death_33").SetActive(value: false);
 		}
 		if (Death_4F == 1 && FurnCont.Kitchen_N == 3)
 		{
-			GameObject.Find("Death_4").SetActive(false);
+			GameObject.Find("Death_4").SetActive(value: false);
 		}
 		if (Death_31F == 1 && FurnCont.Bed_N == 8 && RoomCont.Room_N == 3)
 		{
-			GameObject.Find("Death_31").gameObject.SetActive(false);
+			GameObject.Find("Death_31").gameObject.SetActive(value: false);
 		}
 		if (Death_26F == 1 && FurnCont.Toilet_N == 6)
 		{
-			GameObject.Find("Death_26").SetActive(false);
+			GameObject.Find("Death_26").SetActive(value: false);
 		}
 		if (Death_22F == 1 && FurnCont.Kitchen_N == 10)
 		{
-			GameObject.Find("Death_22").SetActive(false);
+			GameObject.Find("Death_22").SetActive(value: false);
 		}
 		if (Death_13F == 1 && FurnCont.Bed_N == 9)
 		{
-			GameObject.Find("Death_13").SetActive(false);
+			GameObject.Find("Death_13").SetActive(value: false);
 		}
 		if (Death_5F == 1 && FurnCont.Kitchen_N == 11 && RoomCont.Room_N == 4)
 		{
-			GameObject.Find("Death_5").SetActive(false);
+			GameObject.Find("Death_5").SetActive(value: false);
 		}
 		if (Death_3F == 1 && FurnCont.Bed_N == 13)
 		{
-			GameObject.Find("Death_3").SetActive(false);
+			GameObject.Find("Death_3").SetActive(value: false);
 		}
 		if (Death_27F == 1 && FurnCont.Bed_N == 14 && RoomCont.Room_N == 5)
 		{
-			GameObject.Find("Death_27").SetActive(false);
+			GameObject.Find("Death_27").SetActive(value: false);
 		}
 		if (Death_47F == 1 && FurnCont.Toilet_N == 12)
 		{
-			GameObject.Find("Death_47").SetActive(false);
+			GameObject.Find("Death_47").SetActive(value: false);
 		}
 		if (Death_17F == 1 && FurnCont.Toilet_N == 15)
 		{
-			GameObject.Find("Death_17").SetActive(false);
+			GameObject.Find("Death_17").SetActive(value: false);
 		}
 		if (Death_29F == 1 && FurnCont.Kitchen_N == 16)
 		{
-			GameObject.Find("Death_29").SetActive(false);
+			GameObject.Find("Death_29").SetActive(value: false);
 		}
 		if (Death_25F == 1 && FurnCont.Kitchen_N == 17 && RoomCont.Room_N == 6)
 		{
-			GameObject.Find("Death_25").SetActive(false);
+			GameObject.Find("Death_25").SetActive(value: false);
 		}
 		if (Death_54F == 1 && FurnCont.Kitchen_N == 19)
 		{
-			GameObject.Find("Death_54").SetActive(false);
+			GameObject.Find("Death_54").SetActive(value: false);
 		}
 		if (Death_58F == 1 && FurnCont.Bed_N == 18)
 		{
-			GameObject.Find("Death_58").SetActive(false);
+			GameObject.Find("Death_58").SetActive(value: false);
 		}
 		if (Death_51F == 1 && FurnCont.Toilet_N == 20 && RoomCont.Room_N == 7)
 		{
-			GameObject.Find("Death_51").SetActive(false);
+			GameObject.Find("Death_51").SetActive(value: false);
 		}
 		if (Death_52F == 1 && FurnCont.Bed_N == 19)
 		{
-			GameObject.Find("Death_52").SetActive(false);
+			GameObject.Find("Death_52").SetActive(value: false);
 		}
 		if (Death_30F == 1 && FurnCont.Bed_N == 21)
 		{
-			GameObject.Find("Death_30").SetActive(false);
+			GameObject.Find("Death_30").SetActive(value: false);
 		}
 		if (Death_32F == 1 && FurnCont.Kitchen_N == 22)
 		{
-			GameObject.Find("Death_32").SetActive(false);
+			GameObject.Find("Death_32").SetActive(value: false);
 		}
 		if (Death_55F == 1 && FurnCont.Bed_N == 23 && RoomCont.Room_N == 8)
 		{
-			GameObject.Find("Death_55").SetActive(false);
+			GameObject.Find("Death_55").SetActive(value: false);
 		}
 		if (Death_50F == 1 && FurnCont.Toilet_N == 3)
 		{
-			GameObject.Find("Death_50").SetActive(false);
+			GameObject.Find("Death_50").SetActive(value: false);
 		}
 		if (Death_56F == 1 && FurnCont.Toilet_N == 23 && RoomCont.Room_N == 8)
 		{
-			GameObject.Find("Death_56").SetActive(false);
+			GameObject.Find("Death_56").SetActive(value: false);
 		}
 		if (Death_43F == 1 && FurnCont.Bed_N == 26 && RoomCont.Room_N == 9)
 		{
-			GameObject.Find("Death_43").SetActive(false);
+			GameObject.Find("Death_43").SetActive(value: false);
 		}
 		if (Death_46F == 1 && FurnCont.Kitchen_N == 25)
 		{
-			GameObject.Find("Death_46").SetActive(false);
+			GameObject.Find("Death_46").SetActive(value: false);
 		}
 		if (Death_59F == 1 && FurnCont.Bed_N == 27)
 		{
-			GameObject.Find("Death_59").SetActive(false);
+			GameObject.Find("Death_59").SetActive(value: false);
 		}
 		if (Death_57F == 1 && FurnCont.Bed_N == 28)
 		{
-			GameObject.Find("Death_57").SetActive(false);
+			GameObject.Find("Death_57").SetActive(value: false);
 		}
 		if (Death_53F == 1 && FurnCont.Kitchen_N == 29 && RoomCont.Room_N == 10)
 		{
-			GameObject.Find("Death_53").SetActive(false);
+			GameObject.Find("Death_53").SetActive(value: false);
 		}
 		if (Death_40F == 1 && FurnCont.Bed_N == 36)
 		{
-			GameObject.Find("Death_40").SetActive(false);
+			GameObject.Find("Death_40").SetActive(value: false);
 		}
 	}
 
@@ -2724,7 +3489,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_1F == 1 && FurnCont.Bed_N == 1)
 		{
-			GameObject.Find("Death_1").SetActive(false);
+			GameObject.Find("Death_1").SetActive(value: false);
 		}
 	}
 
@@ -2732,7 +3497,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_7F == 1 && FurnCont.Kitchen_N == 2 && RoomCont.Room_N == 1)
 		{
-			GameObject.Find("Death_7").SetActive(false);
+			GameObject.Find("Death_7").SetActive(value: false);
 		}
 	}
 
@@ -2740,7 +3505,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_33F == 1 && FurnCont.Kitchen_N == 4)
 		{
-			GameObject.Find("Death_33").SetActive(false);
+			GameObject.Find("Death_33").SetActive(value: false);
 		}
 	}
 
@@ -2748,7 +3513,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_4F == 1 && FurnCont.Kitchen_N == 3)
 		{
-			GameObject.Find("Death_4").SetActive(false);
+			GameObject.Find("Death_4").SetActive(value: false);
 		}
 	}
 
@@ -2756,7 +3521,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_31F == 1 && FurnCont.Bed_N == 8 && RoomCont.Room_N == 3)
 		{
-			GameObject.Find("Death_31").gameObject.SetActive(false);
+			GameObject.Find("Death_31").gameObject.SetActive(value: false);
 		}
 	}
 
@@ -2764,7 +3529,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_26F == 1 && FurnCont.Toilet_N == 6)
 		{
-			GameObject.Find("Death_26").SetActive(false);
+			GameObject.Find("Death_26").SetActive(value: false);
 		}
 	}
 
@@ -2772,7 +3537,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_22F == 1 && FurnCont.Kitchen_N == 10)
 		{
-			GameObject.Find("Death_22").SetActive(false);
+			GameObject.Find("Death_22").SetActive(value: false);
 		}
 	}
 
@@ -2780,7 +3545,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_13F == 1 && FurnCont.Bed_N == 9)
 		{
-			GameObject.Find("Death_13").SetActive(false);
+			GameObject.Find("Death_13").SetActive(value: false);
 		}
 	}
 
@@ -2788,7 +3553,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_5F == 1 && FurnCont.Kitchen_N == 11 && RoomCont.Room_N == 4)
 		{
-			GameObject.Find("Death_5").SetActive(false);
+			GameObject.Find("Death_5").SetActive(value: false);
 		}
 	}
 
@@ -2796,7 +3561,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_3F == 1 && FurnCont.Bed_N == 13)
 		{
-			GameObject.Find("Death_3").SetActive(false);
+			GameObject.Find("Death_3").SetActive(value: false);
 		}
 	}
 
@@ -2804,7 +3569,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_27F == 1 && FurnCont.Bed_N == 14 && RoomCont.Room_N == 5)
 		{
-			GameObject.Find("Death_27").SetActive(false);
+			GameObject.Find("Death_27").SetActive(value: false);
 		}
 	}
 
@@ -2812,7 +3577,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_47F == 1 && FurnCont.Toilet_N == 12)
 		{
-			GameObject.Find("Death_47").SetActive(false);
+			GameObject.Find("Death_47").SetActive(value: false);
 		}
 	}
 
@@ -2820,7 +3585,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_17F == 1 && FurnCont.Toilet_N == 15)
 		{
-			GameObject.Find("Death_17").SetActive(false);
+			GameObject.Find("Death_17").SetActive(value: false);
 		}
 	}
 
@@ -2828,7 +3593,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_29F == 1 && FurnCont.Kitchen_N == 16)
 		{
-			GameObject.Find("Death_29").SetActive(false);
+			GameObject.Find("Death_29").SetActive(value: false);
 		}
 	}
 
@@ -2836,7 +3601,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_25F == 1 && FurnCont.Kitchen_N == 17 && RoomCont.Room_N == 6)
 		{
-			GameObject.Find("Death_25").SetActive(false);
+			GameObject.Find("Death_25").SetActive(value: false);
 		}
 	}
 
@@ -2844,7 +3609,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_54F == 1 && FurnCont.Kitchen_N == 19)
 		{
-			GameObject.Find("Death_54").SetActive(false);
+			GameObject.Find("Death_54").SetActive(value: false);
 		}
 	}
 
@@ -2852,7 +3617,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_58F == 1 && FurnCont.Bed_N == 18)
 		{
-			GameObject.Find("Death_58").SetActive(false);
+			GameObject.Find("Death_58").SetActive(value: false);
 		}
 	}
 
@@ -2860,7 +3625,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_51F == 1 && FurnCont.Toilet_N == 20 && RoomCont.Room_N == 7)
 		{
-			GameObject.Find("Death_51").SetActive(false);
+			GameObject.Find("Death_51").SetActive(value: false);
 		}
 	}
 
@@ -2868,7 +3633,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_52F == 1 && FurnCont.Bed_N == 19)
 		{
-			GameObject.Find("Death_52").SetActive(false);
+			GameObject.Find("Death_52").SetActive(value: false);
 		}
 	}
 
@@ -2876,7 +3641,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_30F == 1 && FurnCont.Bed_N == 21)
 		{
-			GameObject.Find("Death_30").SetActive(false);
+			GameObject.Find("Death_30").SetActive(value: false);
 		}
 	}
 
@@ -2884,7 +3649,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_32F == 1 && FurnCont.Kitchen_N == 22)
 		{
-			GameObject.Find("Death_32").SetActive(false);
+			GameObject.Find("Death_32").SetActive(value: false);
 		}
 	}
 
@@ -2892,7 +3657,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_55F == 1 && FurnCont.Bed_N == 23 && RoomCont.Room_N == 8)
 		{
-			GameObject.Find("Death_55").SetActive(false);
+			GameObject.Find("Death_55").SetActive(value: false);
 		}
 	}
 
@@ -2900,7 +3665,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_50F == 1 && FurnCont.Toilet_N == 3)
 		{
-			GameObject.Find("Death_50").SetActive(false);
+			GameObject.Find("Death_50").SetActive(value: false);
 		}
 	}
 
@@ -2908,7 +3673,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_56F == 1 && FurnCont.Toilet_N == 23 && RoomCont.Room_N == 8)
 		{
-			GameObject.Find("Death_56").SetActive(false);
+			GameObject.Find("Death_56").SetActive(value: false);
 		}
 	}
 
@@ -2916,7 +3681,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_43F == 1 && FurnCont.Bed_N == 26 && RoomCont.Room_N == 9)
 		{
-			GameObject.Find("Death_43").SetActive(false);
+			GameObject.Find("Death_43").SetActive(value: false);
 		}
 	}
 
@@ -2924,7 +3689,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_46F == 1 && FurnCont.Kitchen_N == 25)
 		{
-			GameObject.Find("Death_46").SetActive(false);
+			GameObject.Find("Death_46").SetActive(value: false);
 		}
 	}
 
@@ -2932,7 +3697,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_59F == 1 && FurnCont.Bed_N == 27)
 		{
-			GameObject.Find("Death_59").SetActive(false);
+			GameObject.Find("Death_59").SetActive(value: false);
 		}
 	}
 
@@ -2940,7 +3705,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_57F == 1 && FurnCont.Bed_N == 28)
 		{
-			GameObject.Find("Death_57").SetActive(false);
+			GameObject.Find("Death_57").SetActive(value: false);
 		}
 	}
 
@@ -2948,7 +3713,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_53F == 1 && FurnCont.Kitchen_N == 29 && RoomCont.Room_N == 10)
 		{
-			GameObject.Find("Death_53").SetActive(false);
+			GameObject.Find("Death_53").SetActive(value: false);
 		}
 	}
 
@@ -2956,7 +3721,7 @@ public class SuddenDeathCont : MonoBehaviour
 	{
 		if (Death_40F == 1 && FurnCont.Bed_N == 36)
 		{
-			GameObject.Find("Death_40").SetActive(false);
+			GameObject.Find("Death_40").SetActive(value: false);
 		}
 	}
 }

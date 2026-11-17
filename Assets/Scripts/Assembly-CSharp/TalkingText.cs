@@ -122,23 +122,16 @@ public class TalkingText : MonoBehaviour
 
 	private void Start()
 	{
-		NickName.GetComponent<Text>().text = string.Format("{0}", Name);
+		NickName.GetComponent<Text>().text = $"{Name}";
 		Random_Talking();
-		Arrow.SetActive(true);
-		base.gameObject.GetComponent<Button>().interactable = true;
+		Arrow.SetActive(value: true);
+		gameObject.GetComponent<Button>().interactable = true;
 		PopUp_Bool = PlayerPrefs.GetInt("PopUp_Bool");
 	}
 
 	public void FixedUpdate()
 	{
-		try
-		{
-            Talkbox.text = m_Builder.ToString(0, m_EndIndex);
-        }
-		catch (System.Exception)
-		{
-
-		}
+		Talkbox.text = m_Builder.ToString(0, m_EndIndex);
 		ElapsedTime += Time.fixedDeltaTime * 18f;
 		m_EndIndex = (int)ElapsedTime;
 		if (m_EndIndex > m_Builder.Length)
@@ -161,7 +154,7 @@ public class TalkingText : MonoBehaviour
 		Application.OpenURL("https://play.google.com/store/apps/details?id=com.factory608.DMSeng");
 		PopUp_Bool = 1;
 		PlayerPrefs.SetInt("PopUp_Bool", 1);
-		PopUp.SetActive(false);
+		PopUp.SetActive(value: false);
 	}
 
 	public void GoFacebook()
@@ -169,7 +162,7 @@ public class TalkingText : MonoBehaviour
 		Application.OpenURL("https://www.facebook.com/608factory/");
 		PopUp_Bool = 2;
 		PlayerPrefs.SetInt("PopUp_Bool", 2);
-		PopUp.SetActive(false);
+		PopUp.SetActive(value: false);
 		EventCont.Plus_MONEY = 500000L;
 		scene_controll.money += 500000L;
 		scene_controll.money_Text = scene_controll.money.ToString();
@@ -179,7 +172,7 @@ public class TalkingText : MonoBehaviour
 
 	public void PopUpClose()
 	{
-		PopUp.SetActive(false);
+		PopUp.SetActive(value: false);
 	}
 
 	public void TalkDirection()
@@ -192,10 +185,10 @@ public class TalkingText : MonoBehaviour
 				PopUpran++;
 				if (PopUpran == 20)
 				{
-					PopUp.SetActive(true);
-					Google_T.GetComponent<Text>().text = string.Format("Do you enjoy this game?\nComment please!");
-					GoogleBtn.SetActive(true);
-					Facebookbtn.SetActive(false);
+					PopUp.SetActive(value: true);
+					Google_T.GetComponent<Text>().text = $"Do you enjoy this game?\nComment please!";
+					GoogleBtn.SetActive(value: true);
+					Facebookbtn.SetActive(value: false);
 				}
 			}
 			if (PopUp_Bool == 1)
@@ -203,10 +196,10 @@ public class TalkingText : MonoBehaviour
 				PopUpran++;
 				if (PopUpran == 20)
 				{
-					PopUp.SetActive(true);
-					Google_T.GetComponent<Text>().text = string.Format("Please\n'Like' Living Alone page\nand get money!");
-					GoogleBtn.SetActive(false);
-					Facebookbtn.SetActive(true);
+					PopUp.SetActive(value: true);
+					Google_T.GetComponent<Text>().text = $"Please\n'Like' Living Alone page\nand get money!";
+					GoogleBtn.SetActive(value: false);
+					Facebookbtn.SetActive(value: true);
 				}
 			}
 		}
@@ -409,9 +402,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room1_randomtalk_N;
 		m_Builder.Append(Room1_Text[Room1_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room1_randomtalk_N == 8)
+		{
+			_SuddenDeathCont.Deaht_2();
+		}
+		if (Room1_randomtalk_N == 15)
+		{
+			_SuddenDeathCont.Death_38();
+		}
 	}
 
 	public void Room2_Talk()
@@ -423,9 +424,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room2_randomtalk_N;
 		m_Builder.Append(Room2_Text[Room2_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room2_randomtalk_N == 5)
+		{
+			_SuddenDeathCont.Death_10();
+		}
+		if (Room2_randomtalk_N == 10)
+		{
+			_SuddenDeathCont.Death_39();
+		}
 	}
 
 	public void Room3_Talk()
@@ -437,9 +446,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room3_randomtalk_N;
 		m_Builder.Append(Room3_Text[Room3_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room3_randomtalk_N == 1)
+		{
+			_SuddenDeathCont.Death_9();
+		}
+		if (Room3_randomtalk_N == 3)
+		{
+			_SuddenDeathCont.Death_18();
+		}
 	}
 
 	public void Room4_Talk()
@@ -451,9 +468,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room4_randomtalk_N;
 		m_Builder.Append(Room4_Text[Room4_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room4_randomtalk_N == 6)
+		{
+			_SuddenDeathCont.Death_24();
+		}
+		if (Room4_randomtalk_N == 10)
+		{
+			_SuddenDeathCont.Death_41();
+		}
 	}
 
 	public void Room5_Talk()
@@ -465,9 +490,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room5_randomtalk_N;
 		m_Builder.Append(Room5_Text[Room5_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room5_randomtalk_N == 5)
+		{
+			_SuddenDeathCont.Death_6();
+		}
+		if (Room5_randomtalk_N == 8)
+		{
+			_SuddenDeathCont.Death_12();
+		}
 	}
 
 	public void Room6_Talk()
@@ -479,9 +512,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room6_randomtalk_N;
 		m_Builder.Append(Room6_Text[Room6_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room6_randomtalk_N == 1)
+		{
+			_SuddenDeathCont.Death_28();
+		}
+		if (Room6_randomtalk_N == 2)
+		{
+			_SuddenDeathCont.Death_44();
+		}
 	}
 
 	public void Room7_Talk()
@@ -493,9 +534,17 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room7_randomtalk_N;
 		m_Builder.Append(Room7_Text[Room7_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room7_randomtalk_N == 0)
+		{
+			_SuddenDeathCont.Death_11();
+		}
+		if (Room7_randomtalk_N == 3)
+		{
+			_SuddenDeathCont.Death_15();
+		}
 	}
 
 	public void Room8_Talk()
@@ -507,9 +556,21 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room8_randomtalk_N;
 		m_Builder.Append(Room8_Text[Room8_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room8_randomtalk_N == 1)
+		{
+			_SuddenDeathCont.Death_34();
+		}
+		if (Room8_randomtalk_N == 2)
+		{
+			_SuddenDeathCont.Death_21();
+		}
+		if (Room8_randomtalk_N == 5)
+		{
+			_SuddenDeathCont.Death_45();
+		}
 	}
 
 	public void Room9_Talk()
@@ -521,9 +582,13 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room9_randomtalk_N;
 		m_Builder.Append(Room9_Text[Room9_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
+		if (Room9_randomtalk_N == 0)
+		{
+			_SuddenDeathCont.Death_42();
+		}
 	}
 
 	public void Room10_Talk()
@@ -535,8 +600,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room10_randomtalk_N;
 		m_Builder.Append(Room10_Text[Room10_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -549,8 +614,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room11_randomtalk_N;
 		m_Builder.Append(Room11_Text[Room11_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -563,8 +628,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room12_randomtalk_N;
 		m_Builder.Append(Room12_Text[Room12_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -577,8 +642,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room13_randomtalk_N;
 		m_Builder.Append(Room13_Text[Room13_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -591,8 +656,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room14_randomtalk_N;
 		m_Builder.Append(Room14_Text[Room14_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -605,8 +670,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room15_randomtalk_N;
 		m_Builder.Append(Room15_Text[Room15_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -619,8 +684,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room16_randomtalk_N;
 		m_Builder.Append(Room16_Text[Room16_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -633,8 +698,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = Room17_randomtalk_N;
 		m_Builder.Append(Room17_Text[Room17_randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 	}
 
@@ -649,8 +714,8 @@ public class TalkingText : MonoBehaviour
 		m_EndIndex = 1;
 		m_ListIndex = randomtalk_N;
 		m_Builder.Append(RandomTalk[randomtalk_N]);
-		base.gameObject.GetComponent<Button>().interactable = false;
-		Arrow.SetActive(false);
+		gameObject.GetComponent<Button>().interactable = false;
+		Arrow.SetActive(value: false);
 		Invoke("ClickAgain", 1f);
 		scene_controll.money_Text = SPrefs.GetString("final_money2");
 		scene_controll.money = long.Parse(scene_controll.money_Text);
@@ -658,7 +723,7 @@ public class TalkingText : MonoBehaviour
 
 	public void ClickAgain()
 	{
-		base.gameObject.GetComponent<Button>().interactable = true;
-		Arrow.SetActive(true);
+		gameObject.GetComponent<Button>().interactable = true;
+		Arrow.SetActive(value: true);
 	}
 }

@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -132,6 +132,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,18 +178,18 @@ TextureImporter:
       name: Head_woman_man_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 234
-        width: 12
-        height: 13
+        x: 0
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0c757dc0d524c8644a6d8faab1b1452e
+      spriteID: 2aaab808ffffffff0800000000000000
       internalID: -2138330462
       vertices: []
       indices: 
@@ -160,18 +199,18 @@ TextureImporter:
       name: Head_woman_man_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 234
-        width: 13
-        height: 13
+        x: 21
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 93a101c5fcec0034f87b9a6684b61aa5
+      spriteID: 18a652c3000000000800000000000000
       internalID: 1009085057
       vertices: []
       indices: 
@@ -181,18 +220,18 @@ TextureImporter:
       name: Head_woman_man_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 234
-        width: 12
-        height: 13
+        x: 42
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd77809e638e24142a909ea32af28411
+      spriteID: 96b21817000000000800000000000000
       internalID: 1904290665
       vertices: []
       indices: 
@@ -202,18 +241,18 @@ TextureImporter:
       name: Head_woman_man_3
       rect:
         serializedVersion: 2
-        x: 67
-        y: 234
-        width: 13
-        height: 13
+        x: 63
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 66048dabf99545349b7a4e63db552a61
+      spriteID: 944255c3000000000800000000000000
       internalID: 1012212809
       vertices: []
       indices: 
@@ -223,18 +262,18 @@ TextureImporter:
       name: Head_woman_man_4
       rect:
         serializedVersion: 2
-        x: 89
-        y: 237
-        width: 11
-        height: 18
+        x: 84
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 997d32fe4e646ba488c3fd921da9f3ce
+      spriteID: 0bab2458ffffffff0800000000000000
       internalID: -2059224400
       vertices: []
       indices: 
@@ -244,18 +283,18 @@ TextureImporter:
       name: Head_woman_man_5
       rect:
         serializedVersion: 2
-        x: 110
-        y: 237
-        width: 11
-        height: 18
+        x: 105
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: daa999ef862f66b4499714042fddc679
+      spriteID: 711ea64effffffff0800000000000000
       internalID: -462757609
       vertices: []
       indices: 
@@ -265,18 +304,18 @@ TextureImporter:
       name: Head_woman_man_6
       rect:
         serializedVersion: 2
-        x: 131
-        y: 237
-        width: 11
-        height: 18
+        x: 126
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bc04899f7015c66499d6602dd6be121f
+      spriteID: 01115efcffffffff0800000000000000
       internalID: -807071472
       vertices: []
       indices: 
@@ -286,18 +325,18 @@ TextureImporter:
       name: Head_woman_man_7
       rect:
         serializedVersion: 2
-        x: 152
-        y: 237
-        width: 11
-        height: 18
+        x: 147
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b7d9a46a208eb874c8d52a64c906383f
+      spriteID: d88ae1efffffffff0800000000000000
       internalID: -31545203
       vertices: []
       indices: 
@@ -307,18 +346,18 @@ TextureImporter:
       name: Head_woman_man_8
       rect:
         serializedVersion: 2
-        x: 169
-        y: 231
-        width: 15
-        height: 17
+        x: 168
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8ac4465e85f11c54cb8265da73783f08
+      spriteID: b0a3f66affffffff0800000000000000
       internalID: -1502660085
       vertices: []
       indices: 
@@ -328,18 +367,18 @@ TextureImporter:
       name: Head_woman_man_9
       rect:
         serializedVersion: 2
-        x: 191
-        y: 231
-        width: 17
-        height: 17
+        x: 189
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ef3fd33304df781409eb260759a70bd4
+      spriteID: 3770330affffffff0800000000000000
       internalID: -1607268493
       vertices: []
       indices: 
@@ -349,18 +388,18 @@ TextureImporter:
       name: Head_woman_man_10
       rect:
         serializedVersion: 2
-        x: 215
-        y: 231
-        width: 15
-        height: 17
+        x: 210
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ec3949db31f4481468c8316372832eee
+      spriteID: c5d1e78cffffffff0800000000000000
       internalID: -931259044
       vertices: []
       indices: 
@@ -370,18 +409,18 @@ TextureImporter:
       name: Head_woman_man_11
       rect:
         serializedVersion: 2
-        x: 232
-        y: 231
-        width: 19
-        height: 17
+        x: 231
+        y: 230
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 50f94dadd37362b488f5ba934f2d0924
+      spriteID: 08b699dfffffffff0800000000000000
       internalID: -40277120
       vertices: []
       indices: 
@@ -391,18 +430,18 @@ TextureImporter:
       name: Head_woman_man_12
       rect:
         serializedVersion: 2
-        x: 2
-        y: 211
-        width: 18
-        height: 15
+        x: 0
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8746256b5b2c9e743a8ab6fba798733c
+      spriteID: 893e2efaffffffff0800000000000000
       internalID: -1344085096
       vertices: []
       indices: 
@@ -412,18 +451,18 @@ TextureImporter:
       name: Head_woman_man_13
       rect:
         serializedVersion: 2
-        x: 23
-        y: 211
-        width: 17
-        height: 15
+        x: 21
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e88434a4487cf16429b5accd77ae1db7
+      spriteID: fc1ead8bffffffff0800000000000000
       internalID: -1193614897
       vertices: []
       indices: 
@@ -433,18 +472,18 @@ TextureImporter:
       name: Head_woman_man_14
       rect:
         serializedVersion: 2
-        x: 43
-        y: 211
-        width: 18
-        height: 15
+        x: 42
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 74169db00ce90274ab91694138af930a
+      spriteID: 2e8596c3000000000800000000000000
       internalID: 1013536994
       vertices: []
       indices: 
@@ -454,18 +493,18 @@ TextureImporter:
       name: Head_woman_man_15
       rect:
         serializedVersion: 2
-        x: 65
-        y: 210
-        width: 17
-        height: 16
+        x: 63
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 03574788a1bdac34c909f5ff5ee2ef21
+      spriteID: 303a96e5000000000800000000000000
       internalID: 1583981315
       vertices: []
       indices: 
@@ -475,18 +514,18 @@ TextureImporter:
       name: Head_woman_man_16
       rect:
         serializedVersion: 2
-        x: 86
-        y: 211
-        width: 15
-        height: 12
+        x: 84
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b409e6d2b4cba244b969311abba965d
+      spriteID: 646d0c72000000000800000000000000
       internalID: 666949190
       vertices: []
       indices: 
@@ -496,18 +535,18 @@ TextureImporter:
       name: Head_woman_man_17
       rect:
         serializedVersion: 2
-        x: 108
-        y: 211
-        width: 16
-        height: 12
+        x: 105
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a413e5a7860a71f478b838dec3e673f4
+      spriteID: d582f777000000000800000000000000
       internalID: 2004822109
       vertices: []
       indices: 
@@ -517,18 +556,18 @@ TextureImporter:
       name: Head_woman_man_18
       rect:
         serializedVersion: 2
-        x: 130
-        y: 211
-        width: 15
-        height: 12
+        x: 126
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1823955daeea65f4285c7596fadd41b5
+      spriteID: a44f21f9ffffffff0800000000000000
       internalID: -1626147766
       vertices: []
       indices: 
@@ -538,18 +577,18 @@ TextureImporter:
       name: Head_woman_man_19
       rect:
         serializedVersion: 2
-        x: 149
-        y: 211
-        width: 16
-        height: 12
+        x: 147
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d686eeebd73246d44aba696e9cb30e85
+      spriteID: 98adc012000000000800000000000000
       internalID: 554490505
       vertices: []
       indices: 
@@ -560,17 +599,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 168
-        y: 211
-        width: 18
-        height: 17
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d2e9b24e30d7ba64d8e7037268fbe85a
+      spriteID: 5890e5f9ffffffff0800000000000000
       internalID: -1621227131
       vertices: []
       indices: 
@@ -580,18 +619,18 @@ TextureImporter:
       name: Head_woman_man_21
       rect:
         serializedVersion: 2
-        x: 190
-        y: 211
-        width: 19
-        height: 17
+        x: 189
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e782e2a78446e6d4ca068f652b9a8c82
+      spriteID: 00c67579ffffffff0800000000000000
       internalID: -1755878400
       vertices: []
       indices: 
@@ -601,18 +640,18 @@ TextureImporter:
       name: Head_woman_man_22
       rect:
         serializedVersion: 2
-        x: 213
-        y: 211
-        width: 18
-        height: 17
+        x: 210
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b84d1e591392bd64bad667c06d9c8f94
+      spriteID: ff480a41000000000800000000000000
       internalID: 346064127
       vertices: []
       indices: 
@@ -622,18 +661,18 @@ TextureImporter:
       name: Head_woman_man_23
       rect:
         serializedVersion: 2
-        x: 232
-        y: 211
-        width: 19
-        height: 17
+        x: 231
+        y: 204
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1c97f7c1dff0d2a4f95006b2399de5a6
+      spriteID: 0b387ba4000000000800000000000000
       internalID: 1253540784
       vertices: []
       indices: 
@@ -643,18 +682,18 @@ TextureImporter:
       name: Head_woman_man_24
       rect:
         serializedVersion: 2
-        x: 4
-        y: 185
-        width: 13
-        height: 15
+        x: 0
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a64b10c01491a743a15d2dfa833bf5a
+      spriteID: 1ee47686000000000800000000000000
       internalID: 1751600865
       vertices: []
       indices: 
@@ -664,18 +703,18 @@ TextureImporter:
       name: Head_woman_man_25
       rect:
         serializedVersion: 2
-        x: 22
-        y: 185
-        width: 19
-        height: 15
+        x: 21
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c3ef2e85704139044a35894ccaba7988
+      spriteID: 387c236effffffff0800000000000000
       internalID: -432879741
       vertices: []
       indices: 
@@ -685,18 +724,18 @@ TextureImporter:
       name: Head_woman_man_26
       rect:
         serializedVersion: 2
-        x: 46
-        y: 185
-        width: 13
-        height: 15
+        x: 42
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d29922cae42e8354ab70102cc720f7e7
+      spriteID: 190ecabaffffffff0800000000000000
       internalID: -1414733679
       vertices: []
       indices: 
@@ -706,18 +745,18 @@ TextureImporter:
       name: Head_woman_man_27
       rect:
         serializedVersion: 2
-        x: 64
-        y: 185
-        width: 19
-        height: 15
+        x: 63
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 414e0cada2fe89f418ce19108ce6b40b
+      spriteID: 3ae00e69ffffffff0800000000000000
       internalID: -1763701085
       vertices: []
       indices: 
@@ -727,18 +766,18 @@ TextureImporter:
       name: Head_woman_man_28
       rect:
         serializedVersion: 2
-        x: 87
-        y: 185
-        width: 17
-        height: 13
+        x: 84
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9e82da5e0fbf16d4d8e4def9cf3aa81e
+      spriteID: 089824d9ffffffff0800000000000000
       internalID: -1656583808
       vertices: []
       indices: 
@@ -748,18 +787,18 @@ TextureImporter:
       name: Head_woman_man_29
       rect:
         serializedVersion: 2
-        x: 108
-        y: 185
-        width: 15
-        height: 13
+        x: 105
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2fbb0951b780d9f418beb4009c0c25b7
+      spriteID: 58294a67000000000800000000000000
       internalID: 1990496901
       vertices: []
       indices: 
@@ -769,18 +808,18 @@ TextureImporter:
       name: Head_woman_man_30
       rect:
         serializedVersion: 2
-        x: 127
-        y: 185
-        width: 17
-        height: 13
+        x: 126
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 08cfde28973d3eb4dba2f3024cd548bb
+      spriteID: c71d333fffffffff0800000000000000
       internalID: -214707844
       vertices: []
       indices: 
@@ -790,18 +829,18 @@ TextureImporter:
       name: Head_woman_man_31
       rect:
         serializedVersion: 2
-        x: 150
-        y: 185
-        width: 15
-        height: 13
+        x: 147
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ef6d6707feda64948a97128d7064ae91
+      spriteID: e3801d32000000000800000000000000
       internalID: 600901694
       vertices: []
       indices: 
@@ -811,18 +850,18 @@ TextureImporter:
       name: Head_woman_man_32
       rect:
         serializedVersion: 2
-        x: 173
-        y: 190
-        width: 13
-        height: 7
+        x: 168
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b883c6ca7e952c845905c7bb4df8a7d6
+      spriteID: d665c0d2000000000800000000000000
       internalID: 755783277
       vertices: []
       indices: 
@@ -832,18 +871,18 @@ TextureImporter:
       name: Head_woman_man_33
       rect:
         serializedVersion: 2
-        x: 194
-        y: 190
-        width: 11
-        height: 7
+        x: 189
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4d3c477d52b072241b4fb977d433626e
+      spriteID: 1e134658ffffffff0800000000000000
       internalID: -2057031199
       vertices: []
       indices: 
@@ -853,18 +892,18 @@ TextureImporter:
       name: Head_woman_man_34
       rect:
         serializedVersion: 2
-        x: 213
-        y: 190
-        width: 13
-        height: 7
+        x: 210
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 651b97b3228764e4f806fae07f6db0a7
+      spriteID: 09e447e7000000000800000000000000
       internalID: 2121551504
       vertices: []
       indices: 
@@ -874,18 +913,18 @@ TextureImporter:
       name: Head_woman_man_35
       rect:
         serializedVersion: 2
-        x: 236
-        y: 192
-        width: 11
-        height: 5
+        x: 231
+        y: 178
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ce55bb6cfb6c91b498fa7f6f40593c73
+      spriteID: 29f21f02000000000800000000000000
       internalID: 552677266
       vertices: []
       indices: 
@@ -895,18 +934,18 @@ TextureImporter:
       name: Head_woman_man_36
       rect:
         serializedVersion: 2
-        x: 3
-        y: 165
-        width: 15
-        height: 8
+        x: 0
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d6253be4a23585a40bd7accb74539d16
+      spriteID: c4b73e6dffffffff0800000000000000
       internalID: -689734836
       vertices: []
       indices: 
@@ -916,18 +955,18 @@ TextureImporter:
       name: Head_woman_man_37
       rect:
         serializedVersion: 2
-        x: 24
-        y: 165
-        width: 15
-        height: 8
+        x: 21
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6606f0f20cacde747b6e893c299c1c0e
+      spriteID: f3991174000000000800000000000000
       internalID: 1192335679
       vertices: []
       indices: 
@@ -937,18 +976,18 @@ TextureImporter:
       name: Head_woman_man_38
       rect:
         serializedVersion: 2
-        x: 45
-        y: 165
-        width: 15
-        height: 8
+        x: 42
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cae029a2b6b914f4e9b37e207584900e
+      spriteID: 6ae2d959ffffffff0800000000000000
       internalID: -1784861018
       vertices: []
       indices: 
@@ -958,18 +997,18 @@ TextureImporter:
       name: Head_woman_man_39
       rect:
         serializedVersion: 2
-        x: 66
-        y: 165
-        width: 15
-        height: 8
+        x: 63
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: efe31dda81930864ab048e64c1944b7b
+      spriteID: 0b00ccddffffffff0800000000000000
       internalID: -573833040
       vertices: []
       indices: 
@@ -979,18 +1018,18 @@ TextureImporter:
       name: Head_woman_man_40
       rect:
         serializedVersion: 2
-        x: 89
-        y: 165
-        width: 13
-        height: 7
+        x: 84
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ab408bc84fa0ec849a213d0b181e09af
+      spriteID: a3b1dc00000000000800000000000000
       internalID: 13441850
       vertices: []
       indices: 
@@ -1000,18 +1039,18 @@ TextureImporter:
       name: Head_woman_man_41
       rect:
         serializedVersion: 2
-        x: 110
-        y: 166
-        width: 11
-        height: 6
+        x: 105
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 23e2a5efa21fde548bfdde0943c0bc85
+      spriteID: c8845f28ffffffff0800000000000000
       internalID: -2097854324
       vertices: []
       indices: 
@@ -1021,18 +1060,18 @@ TextureImporter:
       name: Head_woman_man_42
       rect:
         serializedVersion: 2
-        x: 129
-        y: 165
-        width: 13
-        height: 7
+        x: 126
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5f0185ccb037e0c479ad70a443024fdf
+      spriteID: 5566b552000000000800000000000000
       internalID: 626746965
       vertices: []
       indices: 
@@ -1042,18 +1081,18 @@ TextureImporter:
       name: Head_woman_man_43
       rect:
         serializedVersion: 2
-        x: 152
-        y: 167
-        width: 11
-        height: 5
+        x: 147
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 54968579cb4e873479d4c5a3421d7b51
+      spriteID: 21154d0fffffffff0800000000000000
       internalID: -254521070
       vertices: []
       indices: 
@@ -1063,18 +1102,18 @@ TextureImporter:
       name: Head_woman_man_44
       rect:
         serializedVersion: 2
-        x: 201
-        y: 161
-        width: 7
-        height: 5
+        x: 189
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d850f9a71923f61468cbd42b88480b7b
+      spriteID: e4878700000000000800000000000000
       internalID: 7895118
       vertices: []
       indices: 
@@ -1084,18 +1123,18 @@ TextureImporter:
       name: Head_woman_man_45
       rect:
         serializedVersion: 2
-        x: 218
-        y: 161
-        width: 7
-        height: 5
+        x: 210
+        y: 152
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2e992a3a5ea35f14896bd59406b81b39
+      spriteID: f613d3f4000000000800000000000000
       internalID: 1329410415
       vertices: []
       indices: 
@@ -1105,18 +1144,18 @@ TextureImporter:
       name: Head_woman_man_46
       rect:
         serializedVersion: 2
-        x: 4
-        y: 139
-        width: 13
-        height: 7
+        x: 0
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a64d00f693cf13f48b8d7c0d6c617039
+      spriteID: d31aa9d6000000000800000000000000
       internalID: 1838850365
       vertices: []
       indices: 
@@ -1126,18 +1165,18 @@ TextureImporter:
       name: Head_woman_man_47
       rect:
         serializedVersion: 2
-        x: 25
-        y: 139
-        width: 13
-        height: 7
+        x: 21
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26f8fee7773eb5f41b63606d5be6695a
+      spriteID: d84f9847000000000800000000000000
       internalID: 1955198093
       vertices: []
       indices: 
@@ -1147,18 +1186,18 @@ TextureImporter:
       name: Head_woman_man_48
       rect:
         serializedVersion: 2
-        x: 46
-        y: 139
-        width: 13
-        height: 7
+        x: 42
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4304d372ddf08bf4eaf12343b2971011
+      spriteID: 427d3878ffffffff0800000000000000
       internalID: -2021402844
       vertices: []
       indices: 
@@ -1168,18 +1207,18 @@ TextureImporter:
       name: Head_woman_man_49
       rect:
         serializedVersion: 2
-        x: 67
-        y: 139
-        width: 13
-        height: 7
+        x: 63
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 23f765ec7024f9e49a6e4c8c8bc8eb62
+      spriteID: 8b664d3bffffffff0800000000000000
       internalID: -1277925704
       vertices: []
       indices: 
@@ -1189,18 +1228,18 @@ TextureImporter:
       name: Head_woman_man_50
       rect:
         serializedVersion: 2
-        x: 88
-        y: 130
-        width: 12
-        height: 14
+        x: 84
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 699f92e4d88793f4494fb0fb850c5df0
+      spriteID: f5256c1cffffffff0800000000000000
       internalID: -1043967393
       vertices: []
       indices: 
@@ -1210,18 +1249,18 @@ TextureImporter:
       name: Head_woman_man_51
       rect:
         serializedVersion: 2
-        x: 109
-        y: 130
-        width: 13
-        height: 14
+        x: 105
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0386b74cbdc7fd84fbac8f23d266dac7
+      spriteID: d76592f5000000000800000000000000
       internalID: 1596544637
       vertices: []
       indices: 
@@ -1231,18 +1270,18 @@ TextureImporter:
       name: Head_woman_man_52
       rect:
         serializedVersion: 2
-        x: 131
-        y: 130
-        width: 12
-        height: 14
+        x: 126
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0d58d73e2f72bb64cb7281f8b71f451a
+      spriteID: 5f93111effffffff0800000000000000
       internalID: -518964747
       vertices: []
       indices: 
@@ -1252,18 +1291,18 @@ TextureImporter:
       name: Head_woman_man_53
       rect:
         serializedVersion: 2
-        x: 151
-        y: 130
-        width: 13
-        height: 14
+        x: 147
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de538d80770ee4c4b96fbcfe6e1fd1a1
+      spriteID: f358563effffffff0800000000000000
       internalID: -479886017
       vertices: []
       indices: 
@@ -1273,18 +1312,18 @@ TextureImporter:
       name: Head_woman_man_54
       rect:
         serializedVersion: 2
-        x: 170
-        y: 128
-        width: 15
-        height: 16
+        x: 168
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3224ca45d6226d447aca8752a5d9c510
+      spriteID: b149b356000000000800000000000000
       internalID: 1698403355
       vertices: []
       indices: 
@@ -1294,18 +1333,18 @@ TextureImporter:
       name: Head_woman_man_55
       rect:
         serializedVersion: 2
-        x: 190
-        y: 133
-        width: 19
-        height: 11
+        x: 189
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f677a8b32c2a835489e8db553608e4f6
+      spriteID: 21c3425affffffff0800000000000000
       internalID: -1524351982
       vertices: []
       indices: 
@@ -1315,18 +1354,18 @@ TextureImporter:
       name: Head_woman_man_56
       rect:
         serializedVersion: 2
-        x: 214
-        y: 128
-        width: 15
-        height: 16
+        x: 210
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dd823f410206a194fbbaeeba9379923d
+      spriteID: b8c4cb4cffffffff0800000000000000
       internalID: -994292597
       vertices: []
       indices: 
@@ -1336,18 +1375,18 @@ TextureImporter:
       name: Head_woman_man_57
       rect:
         serializedVersion: 2
-        x: 232
-        y: 128
-        width: 19
-        height: 16
+        x: 231
+        y: 126
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bc27263a7cc189745b7ea0a0def10d25
+      spriteID: 45205bb9ffffffff0800000000000000
       internalID: -1682636204
       vertices: []
       indices: 
@@ -1357,18 +1396,18 @@ TextureImporter:
       name: Head_woman_man_58
       rect:
         serializedVersion: 2
-        x: 1
-        y: 106
-        width: 15
-        height: 15
+        x: 0
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9ed8b477d7dd7004cb56fcd253ba1a19
+      spriteID: 11043ed0000000000800000000000000
       internalID: 232996881
       vertices: []
       indices: 
@@ -1379,17 +1418,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 105
+        y: 100
         width: 21
-        height: 16
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a1ab4d5eae47bc549a1f4384b0a270d7
+      spriteID: 6b56c954000000000800000000000000
       internalID: 1167877558
       vertices: []
       indices: 
@@ -1399,18 +1438,18 @@ TextureImporter:
       name: Head_woman_man_60
       rect:
         serializedVersion: 2
-        x: 47
-        y: 106
-        width: 15
-        height: 15
+        x: 42
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 421205bf848479943b59ea9912194337
+      spriteID: 27a7c25fffffffff0800000000000000
       internalID: -181634446
       vertices: []
       indices: 
@@ -1421,17 +1460,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
-        y: 105
+        y: 100
         width: 21
-        height: 16
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 91dd80621ca91724db44b42e17530e7c
+      spriteID: 40e892aeffffffff0800000000000000
       internalID: -366375420
       vertices: []
       indices: 
@@ -1441,18 +1480,18 @@ TextureImporter:
       name: Head_woman_man_62
       rect:
         serializedVersion: 2
-        x: 88
-        y: 107
-        width: 13
-        height: 13
+        x: 84
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7829d2a3a88c64e41bf4cf6b9062352e
+      spriteID: 5b860f6cffffffff0800000000000000
       internalID: -957323083
       vertices: []
       indices: 
@@ -1462,18 +1501,18 @@ TextureImporter:
       name: Head_woman_man_63
       rect:
         serializedVersion: 2
-        x: 108
-        y: 107
-        width: 14
-        height: 13
+        x: 105
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e05bd9f32b4ca734193a16e3a211b983
+      spriteID: bc738dc7000000000800000000000000
       internalID: 2094544843
       vertices: []
       indices: 
@@ -1483,18 +1522,18 @@ TextureImporter:
       name: Head_woman_man_64
       rect:
         serializedVersion: 2
-        x: 130
-        y: 107
-        width: 13
-        height: 13
+        x: 126
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d9d1e86f0c654d24d8ee1b433ddb6027
+      spriteID: b9abbf20000000000800000000000000
       internalID: 50051739
       vertices: []
       indices: 
@@ -1504,18 +1543,18 @@ TextureImporter:
       name: Head_woman_man_65
       rect:
         serializedVersion: 2
-        x: 151
-        y: 107
-        width: 14
-        height: 13
+        x: 147
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de7b14f77d4b98f468958c35620ebbf5
+      spriteID: 6698f977000000000800000000000000
       internalID: 2006944102
       vertices: []
       indices: 
@@ -1525,18 +1564,18 @@ TextureImporter:
       name: Head_woman_man_66
       rect:
         serializedVersion: 2
-        x: 173
-        y: 107
-        width: 12
-        height: 12
+        x: 168
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 45f0cc7d4c41919428dfce0e8f0f2b7e
+      spriteID: 2e972467000000000800000000000000
       internalID: 1984068066
       vertices: []
       indices: 
@@ -1546,18 +1585,18 @@ TextureImporter:
       name: Head_woman_man_67
       rect:
         serializedVersion: 2
-        x: 193
-        y: 105
-        width: 13
-        height: 14
+        x: 189
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8a0f7cdfb9649894caf3b553973e79b3
+      spriteID: 6e8a1bebffffffff0800000000000000
       internalID: -1095653146
       vertices: []
       indices: 
@@ -1567,18 +1606,18 @@ TextureImporter:
       name: Head_woman_man_68
       rect:
         serializedVersion: 2
-        x: 214
-        y: 105
-        width: 12
-        height: 14
+        x: 210
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dee21f464005e3a468d388c85074e94f
+      spriteID: 6e16cf63000000000800000000000000
       internalID: 922509798
       vertices: []
       indices: 
@@ -1588,18 +1627,18 @@ TextureImporter:
       name: Head_woman_man_69
       rect:
         serializedVersion: 2
-        x: 234
-        y: 107
-        width: 13
-        height: 12
+        x: 231
+        y: 100
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d2ccf94a517c0c945853f479ee987fe5
+      spriteID: bfdc3952000000000800000000000000
       internalID: 630443515
       vertices: []
       indices: 
@@ -1609,18 +1648,18 @@ TextureImporter:
       name: Head_woman_man_70
       rect:
         serializedVersion: 2
-        x: 5
-        y: 79
-        width: 11
-        height: 18
+        x: 0
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 01c1cd5af70ea6d4ba02fe6d624470cb
+      spriteID: e099016cffffffff0800000000000000
       internalID: -971990770
       vertices: []
       indices: 
@@ -1630,18 +1669,18 @@ TextureImporter:
       name: Head_woman_man_71
       rect:
         serializedVersion: 2
-        x: 26
-        y: 79
-        width: 11
-        height: 18
+        x: 21
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c97bbfc3eb2e1144789f5a0fbb63f09d
+      spriteID: 2feaeeafffffffff0800000000000000
       internalID: -85020942
       vertices: []
       indices: 
@@ -1651,18 +1690,18 @@ TextureImporter:
       name: Head_woman_man_72
       rect:
         serializedVersion: 2
-        x: 47
-        y: 79
-        width: 11
-        height: 18
+        x: 42
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7930339de3cebad4383ef98313944678
+      spriteID: bd42bf5affffffff0800000000000000
       internalID: -1510267685
       vertices: []
       indices: 
@@ -1672,18 +1711,18 @@ TextureImporter:
       name: Head_woman_man_73
       rect:
         serializedVersion: 2
-        x: 68
-        y: 81
-        width: 11
-        height: 16
+        x: 63
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1517a8e77c6b709438dfe80f3a515640
+      spriteID: ef9304e1000000000800000000000000
       internalID: 507525630
       vertices: []
       indices: 
@@ -1693,18 +1732,18 @@ TextureImporter:
       name: Head_woman_man_74
       rect:
         serializedVersion: 2
-        x: 87
-        y: 75
-        width: 14
-        height: 21
+        x: 84
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b101d38bcff75414ab986b4f25990171
+      spriteID: b08a6638ffffffff0800000000000000
       internalID: -2090424309
       vertices: []
       indices: 
@@ -1714,18 +1753,18 @@ TextureImporter:
       name: Head_woman_man_75
       rect:
         serializedVersion: 2
-        x: 107
-        y: 75
-        width: 17
-        height: 21
+        x: 105
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d06e0e3c9d8eec3428ed8854c07de58f
+      spriteID: 60b62104000000000800000000000000
       internalID: 1074948870
       vertices: []
       indices: 
@@ -1735,18 +1774,18 @@ TextureImporter:
       name: Head_woman_man_76
       rect:
         serializedVersion: 2
-        x: 130
-        y: 75
-        width: 14
-        height: 21
+        x: 126
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e4b6f472db760ce4395db9b201e540b3
+      spriteID: c3c55791000000000800000000000000
       internalID: 427121724
       vertices: []
       indices: 
@@ -1756,18 +1795,18 @@ TextureImporter:
       name: Head_woman_man_77
       rect:
         serializedVersion: 2
-        x: 149
-        y: 81
-        width: 17
-        height: 15
+        x: 147
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ab067b6b569c8a34ebf73fc622baee34
+      spriteID: 3b0b8fd4000000000800000000000000
       internalID: 1308143795
       vertices: []
       indices: 
@@ -1777,18 +1816,18 @@ TextureImporter:
       name: Head_woman_man_78
       rect:
         serializedVersion: 2
-        x: 171
-        y: 81
-        width: 14
-        height: 15
+        x: 168
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7a0100e7ff8b3aa41b0cbeb4ec484d19
+      spriteID: f82da863000000000800000000000000
       internalID: 915067535
       vertices: []
       indices: 
@@ -1798,18 +1837,18 @@ TextureImporter:
       name: Head_woman_man_79
       rect:
         serializedVersion: 2
-        x: 192
-        y: 81
-        width: 15
-        height: 15
+        x: 189
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 82dcbd72240a08247b7a0bc4777cb33f
+      spriteID: 600dc2ceffffffff0800000000000000
       internalID: -332607482
       vertices: []
       indices: 
@@ -1819,18 +1858,18 @@ TextureImporter:
       name: Head_woman_man_80
       rect:
         serializedVersion: 2
-        x: 214
-        y: 81
-        width: 14
-        height: 15
+        x: 210
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 23da051ec00b4bd4db3bc5d475b81181
+      spriteID: 003e8b89ffffffff0800000000000000
       internalID: -1732713728
       vertices: []
       indices: 
@@ -1840,18 +1879,18 @@ TextureImporter:
       name: Head_woman_man_81
       rect:
         serializedVersion: 2
-        x: 234
-        y: 81
-        width: 15
-        height: 15
+        x: 231
+        y: 74
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 09accbda824fb054cb8b5d5d312b9b5b
+      spriteID: 7472abd7000000000800000000000000
       internalID: 2109351751
       vertices: []
       indices: 
@@ -1862,17 +1901,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 51
-        width: 16
-        height: 18
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 02dc93552fc6fab4d8342f3e64f5a78d
+      spriteID: db774795000000000800000000000000
       internalID: 1500805053
       vertices: []
       indices: 
@@ -1882,18 +1921,18 @@ TextureImporter:
       name: Head_woman_man_83
       rect:
         serializedVersion: 2
-        x: 23
-        y: 52
-        width: 19
-        height: 17
+        x: 21
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81dbacf835e49d5408c1fdb7bcb55fb3
+      spriteID: 8eab5f73000000000800000000000000
       internalID: 938851048
       vertices: []
       indices: 
@@ -1903,18 +1942,18 @@ TextureImporter:
       name: Head_woman_man_84
       rect:
         serializedVersion: 2
-        x: 47
-        y: 51
-        width: 16
-        height: 18
+        x: 42
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 480d7fbe26582e046ab12f75928c7747
+      spriteID: 13149d01000000000800000000000000
       internalID: 282673457
       vertices: []
       indices: 
@@ -1924,18 +1963,18 @@ TextureImporter:
       name: Head_woman_man_85
       rect:
         serializedVersion: 2
-        x: 64
-        y: 51
-        width: 18
-        height: 18
+        x: 63
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8874a941c101ac7448ca81055290c597
+      spriteID: 54741ea6000000000800000000000000
       internalID: 1793148741
       vertices: []
       indices: 
@@ -1945,18 +1984,18 @@ TextureImporter:
       name: Head_woman_man_86
       rect:
         serializedVersion: 2
-        x: 86
-        y: 55
-        width: 15
-        height: 17
+        x: 84
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5ea8d5c48fe5a7f4c93be755714372c9
+      spriteID: 2d647a5affffffff0800000000000000
       internalID: -1515764014
       vertices: []
       indices: 
@@ -1966,18 +2005,18 @@ TextureImporter:
       name: Head_woman_man_87
       rect:
         serializedVersion: 2
-        x: 107
-        y: 55
-        width: 17
-        height: 17
+        x: 105
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 519e9937b43a5424d9cf76daa7aae07c
+      spriteID: 9b392d2bffffffff0800000000000000
       internalID: -1294822471
       vertices: []
       indices: 
@@ -1987,18 +2026,18 @@ TextureImporter:
       name: Head_woman_man_88
       rect:
         serializedVersion: 2
-        x: 130
-        y: 55
-        width: 15
-        height: 17
+        x: 126
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: abb3144b290907c4bb2a455d8593a9f2
+      spriteID: 7c669089ffffffff0800000000000000
       internalID: -1744214329
       vertices: []
       indices: 
@@ -2008,18 +2047,18 @@ TextureImporter:
       name: Head_woman_man_89
       rect:
         serializedVersion: 2
-        x: 149
-        y: 55
-        width: 17
-        height: 17
+        x: 147
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7e4139566dbd7db44b5ddb141dae9411
+      spriteID: 84927a68ffffffff0800000000000000
       internalID: -2035865272
       vertices: []
       indices: 
@@ -2029,18 +2068,18 @@ TextureImporter:
       name: Head_woman_man_90
       rect:
         serializedVersion: 2
-        x: 171
-        y: 54
-        width: 14
-        height: 19
+        x: 168
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dbf68c99dcf95ae4b86c3fa378343e8c
+      spriteID: 408ad3dfffffffff0800000000000000
       internalID: -46290940
       vertices: []
       indices: 
@@ -2050,18 +2089,18 @@ TextureImporter:
       name: Head_woman_man_91
       rect:
         serializedVersion: 2
-        x: 192
-        y: 55
-        width: 15
-        height: 18
+        x: 189
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d51bf1109a9e9e4c8a84e885da74480
+      spriteID: 89f805e8ffffffff0800000000000000
       internalID: -1907322984
       vertices: []
       indices: 
@@ -2071,18 +2110,18 @@ TextureImporter:
       name: Head_woman_man_92
       rect:
         serializedVersion: 2
-        x: 214
-        y: 54
-        width: 14
-        height: 19
+        x: 210
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b44e7a1ee72783c4686faa2347c8a04c
+      spriteID: bc1c63beffffffff0800000000000000
       internalID: -348732981
       vertices: []
       indices: 
@@ -2092,18 +2131,18 @@ TextureImporter:
       name: Head_woman_man_93
       rect:
         serializedVersion: 2
-        x: 234
-        y: 54
-        width: 15
-        height: 19
+        x: 231
+        y: 48
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d251a22ed5182b14189890cce02cd7c6
+      spriteID: fcecd456000000000800000000000000
       internalID: 1699598031
       vertices: []
       indices: 
@@ -2113,18 +2152,18 @@ TextureImporter:
       name: Head_woman_man_94
       rect:
         serializedVersion: 2
-        x: 1
-        y: 29
-        width: 16
-        height: 19
+        x: 0
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7b9fa7d83d59e9b4b8bef3fd22d8f3cf
+      spriteID: 5b30d38affffffff0800000000000000
       internalID: -1472396363
       vertices: []
       indices: 
@@ -2134,18 +2173,18 @@ TextureImporter:
       name: Head_woman_man_95
       rect:
         serializedVersion: 2
-        x: 22
-        y: 29
-        width: 19
-        height: 19
+        x: 21
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fad0650622eee364e87a478f31561c74
+      spriteID: 4fde1700000000000800000000000000
       internalID: 7466484
       vertices: []
       indices: 
@@ -2155,18 +2194,18 @@ TextureImporter:
       name: Head_woman_man_96
       rect:
         serializedVersion: 2
-        x: 46
-        y: 29
-        width: 16
-        height: 19
+        x: 42
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ddbbd00d6f390d5498a5dca7eabcc317
+      spriteID: c2273daaffffffff0800000000000000
       internalID: -1428983252
       vertices: []
       indices: 
@@ -2176,18 +2215,18 @@ TextureImporter:
       name: Head_woman_man_97
       rect:
         serializedVersion: 2
-        x: 64
-        y: 28
-        width: 19
-        height: 20
+        x: 63
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d7f0d151a99d09e4facdb735e49cd509
+      spriteID: 6e2f7c34000000000800000000000000
       internalID: 1137177318
       vertices: []
       indices: 
@@ -2198,17 +2237,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 25
-        width: 17
-        height: 17
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd6285332b429184692fe642f187fb41
+      spriteID: c4fe11a9ffffffff0800000000000000
       internalID: -1710100660
       vertices: []
       indices: 
@@ -2219,17 +2258,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 105
-        y: 26
-        width: 19
-        height: 15
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c60b61042331b7d449d160a3e0cd7fa3
+      spriteID: 4f840001000000000800000000000000
       internalID: 268454132
       vertices: []
       indices: 
@@ -2239,18 +2278,18 @@ TextureImporter:
       name: Head_woman_man_100
       rect:
         serializedVersion: 2
-        x: 130
-        y: 25
-        width: 17
-        height: 16
+        x: 126
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0afa693036d4bba4cb5dae72d8c74f24
+      spriteID: 291e5795000000000800000000000000
       internalID: 1500897682
       vertices: []
       indices: 
@@ -2260,18 +2299,18 @@ TextureImporter:
       name: Head_woman_man_101
       rect:
         serializedVersion: 2
-        x: 149
-        y: 25
-        width: 19
-        height: 16
+        x: 147
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c1d4d3260b4cd334abd692618e4254fa
+      spriteID: 674757d4000000000800000000000000
       internalID: 1299543158
       vertices: []
       indices: 
@@ -2281,18 +2320,18 @@ TextureImporter:
       name: Head_woman_man_102
       rect:
         serializedVersion: 2
-        x: 171
-        y: 29
-        width: 14
-        height: 12
+        x: 168
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5020c2c22e8daa84eb173c9bc4633ce6
+      spriteID: 962919ffffffffff0800000000000000
       internalID: -7237015
       vertices: []
       indices: 
@@ -2302,18 +2341,18 @@ TextureImporter:
       name: Head_woman_man_103
       rect:
         serializedVersion: 2
-        x: 192
-        y: 29
-        width: 15
-        height: 12
+        x: 189
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9e57b83ec0afc2646a094f77577d43cd
+      spriteID: 2b9bcc0dffffffff0800000000000000
       internalID: -791889486
       vertices: []
       indices: 
@@ -2323,18 +2362,18 @@ TextureImporter:
       name: Head_woman_man_104
       rect:
         serializedVersion: 2
-        x: 214
-        y: 29
-        width: 14
-        height: 12
+        x: 210
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 481ea968d680e3e448a01ebd60ff8e54
+      spriteID: b8369f77000000000800000000000000
       internalID: 2012832651
       vertices: []
       indices: 
@@ -2344,18 +2383,18 @@ TextureImporter:
       name: Head_woman_man_105
       rect:
         serializedVersion: 2
-        x: 234
-        y: 29
-        width: 15
-        height: 12
+        x: 231
+        y: 22
+        width: 21
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1acb1e3677e67f84eb4a6d25858adda0
+      spriteID: 4e30b5d9ffffffff0800000000000000
       internalID: -1654979612
       vertices: []
       indices: 
