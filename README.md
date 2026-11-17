@@ -1,7 +1,7 @@
 # livingalone2decomp
 decomp of my childhood game.
 
-# project cancelled feel free to fork
+# the recomp is finished
 
 check notes.md to see notes about the games code<br>
 check issues.md to see the current known issues list before creating an issue thread
