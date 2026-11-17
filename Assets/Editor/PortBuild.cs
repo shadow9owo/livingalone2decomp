@@ -69,6 +69,21 @@ public static class PortBuild
         Run(BuildTarget.StandaloneWindows64, Path.Combine(OutRoot, "Windows", "LivingAlone2.exe"));
     }
 
+    // QA build: same game under a different product name, so its PlayerPrefs (the save) are
+    // separate from the real game's. Run with -smoketest to load every scene and log errors.
+    [MenuItem("Port/Build Smoke Test")]
+    public static void Smoke()
+    {
+        Common();
+        PlayerSettings.productName = Product + " SmokeTest";
+        PlayerSettings.SetScriptingBackend(BuildTargetGroup.Standalone, ScriptingImplementation.Mono2x);
+        PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
+        PlayerSettings.defaultScreenWidth = 540;
+        PlayerSettings.defaultScreenHeight = 960;
+        Run(BuildTarget.StandaloneWindows64, Path.Combine(OutRoot, "SmokeTest", "LivingAlone2SmokeTest.exe"));
+        PlayerSettings.productName = Product;
+    }
+
     [MenuItem("Port/Build Android")]
     public static void Android()
     {

@@ -96,8 +96,8 @@ public class Lovercont : MonoBehaviour
 			Phone = PlayerPrefs.GetInt("Phone");
 			PlayerPrefs.SetInt("favor", 0);
 			favor = PlayerPrefs.GetInt("favor");
-			GameObject.Find("Lover_window").GetComponent<Lovercont>().SetPhonebtn();
-			GameObject.Find("TimeController").GetComponent<TimeCont>().SetLover();
+			SceneFind.Find("Lover_window").GetComponent<Lovercont>().SetPhonebtn();
+			SceneFind.Find("TimeController").GetComponent<TimeCont>().SetLover();
 		}
 		SetPhonebtn();
 		favor = PlayerPrefs.GetInt("favor");
@@ -138,14 +138,14 @@ public class Lovercont : MonoBehaviour
 			SetLovebar();
 			if (Phone == 0)
 			{
-				Object.Destroy(GameObject.Find("Smartphone(Clone)"));
+				Object.Destroy(SceneFind.Find("Smartphone(Clone)"));
 				Loverbar_obj.SetActive(false);
 				Notyet.SetActive(true);
-				GameObject.Find("BackBtn_Child").GetComponent<Button>().onClick.Invoke();
+				SceneFind.Find("BackBtn_Child").GetComponent<Button>().onClick.Invoke();
 			}
 			if (Phone == 1)
 			{
-				Object.Destroy(GameObject.Find("Smartphone_1(Clone)"));
+				Object.Destroy(SceneFind.Find("Smartphone_1(Clone)"));
 				Lover_Char.SetActive(false);
 				Notyet.SetActive(true);
 			}
@@ -164,7 +164,7 @@ public class Lovercont : MonoBehaviour
 			scene_controll.gem -= 100;
 			SPrefs.SetInt("gem2", scene_controll.gem);
 			scene_controll.gem = SPrefs.GetInt("gem2");
-			GameObject.Find("dms").GetComponent<scene_controll_2>().Change();
+			SceneFind.Find("dms").GetComponent<scene_controll_2>().Change();
 		}
 		else
 		{
@@ -197,13 +197,13 @@ public class Lovercont : MonoBehaviour
 				PlayerPrefs.SetInt("L_Sex", 0);
 			}
 			LoverChar.L_Sex = PlayerPrefs.GetInt("L_Sex");
-			GameObject.Find("L_Clothes").GetComponent<LoverClothes>().Start();
-			GameObject.Find("L_Head").GetComponent<LoverHead>().Start();
+			SceneFind.Find("L_Clothes").GetComponent<LoverClothes>().Start();
+			SceneFind.Find("L_Head").GetComponent<LoverHead>().Start();
 			SetReport();
 			scene_controll.gem -= 100;
 			SPrefs.SetInt("gem2", scene_controll.gem);
 			scene_controll.gem = SPrefs.GetInt("gem2");
-			GameObject.Find("dms").GetComponent<scene_controll_2>().Change();
+			SceneFind.Find("dms").GetComponent<scene_controll_2>().Change();
 		}
 		else
 		{
@@ -215,11 +215,11 @@ public class Lovercont : MonoBehaviour
 	{
 		GameObject gameObject = (GameObject)Resources.Load("No_gem_notice");
 		GameObject gameObject2 = (GameObject)Object.Instantiate(Resources.Load("No_gem_notice"));
-		GameObject gameObject3 = GameObject.Find("1_2");
+		GameObject gameObject3 = SceneFind.Find("1_2");
 		gameObject2.transform.SetParent(gameObject3.transform);
 		gameObject2.transform.GetComponent<RectTransform>().anchoredPosition = new Vector3(-3f, 47f, 0f);
 		gameObject2.transform.localScale = gameObject.transform.localScale;
-		Object.Destroy(GameObject.Find("No_gem_notice(Clone)"), 1.5f);
+		Object.Destroy(SceneFind.Find("No_gem_notice(Clone)"), 1.5f);
 	}
 
 	public void SetReport()
@@ -374,7 +374,7 @@ public class Lovercont : MonoBehaviour
 	public void Showgetgem()
 	{
 		scene_controll.gem = SPrefs.GetInt("gem2");
-		GameObject.Find("dms").GetComponent<scene_controll_2>().Change();
+		SceneFind.Find("dms").GetComponent<scene_controll_2>().Change();
 		GameObject gameObject = Object.Instantiate(Love_getgem);
 		gameObject.transform.SetParent(base.transform);
 		gameObject.transform.GetComponent<RectTransform>().anchoredPosition = new Vector3(-3f, 47f, 0f);

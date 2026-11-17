@@ -20,7 +20,7 @@ public class Furnanim_japan : MonoBehaviour
 	{
 		Prefabs_anim = Resources.Load<GameObject>("ActingChar");
 		Actanim = Object.Instantiate(Prefabs_anim);
-		actanim_Parent = GameObject.Find("room_BG");
+		actanim_Parent = SceneFind.Find("room_BG");
 		Actanim.transform.SetParent(actanim_Parent.transform);
 		Actanim.transform.localScale = new Vector3(1f, 1f, 1f);
 	}

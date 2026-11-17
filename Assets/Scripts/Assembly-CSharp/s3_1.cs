@@ -2824,7 +2824,7 @@ public class s3_1 : MonoBehaviour
 		}
 		if (Pet.Pet_N == 7)
 		{
-			s3_7.pet_load.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("pet_alphdog");
+			s3_7.pet_load.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("pet_alphadog");
 		}
 		if (Pet.Pet_N == 8)
 		{

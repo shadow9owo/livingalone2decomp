@@ -131,7 +131,7 @@ public class FurnBtn : MonoBehaviour
 		if (I_Kitchen_Tuto != 1 || I_Bed_Tuto != 1 || I_Desk_Tuto != 1 || I_Toilet_Tuto == 1)
 		{
 		}
-		_Timecontroller = GameObject.Find("TimeController");
+		_Timecontroller = SceneFind.Find("TimeController");
 	}
 
 	public void Setbuff()
@@ -330,14 +330,14 @@ public class FurnBtn : MonoBehaviour
 
 	public void Tuto_0()
 	{
-		GameObject.Find("Tuto_2(Clone)").GetComponent<Image>().enabled = true;
-		GameObject.Find("Tuto_2(Clone)").GetComponent<Button>().enabled = true;
-		GameObject.Find("Tuto_2(Clone)").GetComponent<Tuto_1>().NEXT();
+		SceneFind.Find("Tuto_2(Clone)").GetComponent<Image>().enabled = true;
+		SceneFind.Find("Tuto_2(Clone)").GetComponent<Button>().enabled = true;
+		SceneFind.Find("Tuto_2(Clone)").GetComponent<Tuto_1>().NEXT();
 	}
 
 	public void Plushp_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (TutorialCont.Tutorial_Int == 0)
 		{
@@ -388,15 +388,15 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 0)
 			{
-				GameObject.Find("Kitchen_1_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_1_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 1)
 			{
-				GameObject.Find("Kitchen_1_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_1_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 2)
 			{
-				GameObject.Find("Kitchen_1_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_1_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 2)
@@ -404,19 +404,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 2)
 			{
-				GameObject.Find("Kitchen_2_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_2_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 3)
 			{
-				GameObject.Find("Kitchen_2_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_2_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 4)
 			{
-				GameObject.Find("Kitchen_2_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_2_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 5)
 			{
-				GameObject.Find("Kitchen_2_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_2_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 3)
@@ -424,19 +424,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 5)
 			{
-				GameObject.Find("Kitchen_3_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_3_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 6)
 			{
-				GameObject.Find("Kitchen_3_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_3_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 7)
 			{
-				GameObject.Find("Kitchen_3_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_3_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 8)
 			{
-				GameObject.Find("Kitchen_3_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_3_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 4)
@@ -444,19 +444,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 8)
 			{
-				GameObject.Find("Kitchen_4_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_4_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 9)
 			{
-				GameObject.Find("Kitchen_4_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_4_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 10)
 			{
-				GameObject.Find("Kitchen_4_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_4_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 11)
 			{
-				GameObject.Find("Kitchen_4_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_4_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 5)
@@ -464,19 +464,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 11)
 			{
-				GameObject.Find("Kitchen_5_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_5_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 12)
 			{
-				GameObject.Find("Kitchen_5_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_5_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 13)
 			{
-				GameObject.Find("Kitchen_5_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_5_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 14)
 			{
-				GameObject.Find("Kitchen_5_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_5_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 6)
@@ -484,19 +484,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 14)
 			{
-				GameObject.Find("Kitchen_6_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_6_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 15)
 			{
-				GameObject.Find("Kitchen_6_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_6_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 16)
 			{
-				GameObject.Find("Kitchen_6_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_6_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 17)
 			{
-				GameObject.Find("Kitchen_6_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_6_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 7)
@@ -504,19 +504,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 17)
 			{
-				GameObject.Find("Kitchen_7_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_7_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 18)
 			{
-				GameObject.Find("Kitchen_7_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_7_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 19)
 			{
-				GameObject.Find("Kitchen_7_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_7_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("Kitchen_7_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_7_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 8)
@@ -524,19 +524,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("Kitchen_8_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_8_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 21)
 			{
-				GameObject.Find("Kitchen_8_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_8_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 22)
 			{
-				GameObject.Find("Kitchen_8_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_8_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("Kitchen_8_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_8_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -544,19 +544,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("Kitchen_9_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_9_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 24)
 			{
-				GameObject.Find("Kitchen_9_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_9_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 25)
 			{
-				GameObject.Find("Kitchen_9_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_9_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("Kitchen_9_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_9_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -564,19 +564,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("Kitchen_10_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_10_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 27)
 			{
-				GameObject.Find("Kitchen_10_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_10_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 28)
 			{
-				GameObject.Find("Kitchen_10_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_10_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("Kitchen_10_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_10_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -584,19 +584,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("Kitchen_11_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_11_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 30)
 			{
-				GameObject.Find("Kitchen_11_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_11_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 31)
 			{
-				GameObject.Find("Kitchen_11_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_11_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("Kitchen_11_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_11_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -604,19 +604,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("Kitchen_12_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_12_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 33)
 			{
-				GameObject.Find("Kitchen_12_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_12_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 34)
 			{
-				GameObject.Find("Kitchen_12_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_12_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("Kitchen_12_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_12_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -624,19 +624,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("Kitchen_13_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_13_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 36)
 			{
-				GameObject.Find("Kitchen_13_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_13_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 37)
 			{
-				GameObject.Find("Kitchen_13_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_13_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("Kitchen_13_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_13_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -644,19 +644,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("Kitchen_14_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_14_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 39)
 			{
-				GameObject.Find("Kitchen_14_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_14_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 40)
 			{
-				GameObject.Find("Kitchen_14_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_14_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("Kitchen_14_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_14_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -664,19 +664,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("Kitchen_15_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_15_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 42)
 			{
-				GameObject.Find("Kitchen_15_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_15_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 43)
 			{
-				GameObject.Find("Kitchen_15_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_15_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("Kitchen_15_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_15_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -684,19 +684,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("Kitchen_16_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_16_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 45)
 			{
-				GameObject.Find("Kitchen_16_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_16_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 46)
 			{
-				GameObject.Find("Kitchen_16_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_16_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("Kitchen_16_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_16_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 17)
@@ -704,19 +704,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("Kitchen_17_1(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_17_1(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 48)
 			{
-				GameObject.Find("Kitchen_17_2(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_17_2(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 49)
 			{
-				GameObject.Find("Kitchen_17_3(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_17_3(Clone)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 50)
 			{
-				GameObject.Find("Kitchen_17_4(Clone)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Kitchen_17_4(Clone)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (Alert_.activeInHierarchy)
@@ -730,7 +730,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plusmp_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (TutorialCont.Tutorial_Int == 0)
 		{
@@ -758,53 +758,53 @@ public class FurnBtn : MonoBehaviour
 			Debug.Log("KitchenN" + FurnCont.Kitchen_N);
 			if (FurnCont.Kitchen_N == 0)
 			{
-				GameObject.Find("Kitchen_1_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_1_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 1)
 			{
-				GameObject.Find("Kitchen_1_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_1_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 2)
 			{
-				GameObject.Find("Kitchen_1_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_1_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 2)
 		{
 			if (FurnCont.Kitchen_N == 2)
 			{
-				GameObject.Find("Kitchen_2_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_2_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 3)
 			{
-				GameObject.Find("Kitchen_2_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_2_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 4)
 			{
-				GameObject.Find("Kitchen_2_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_2_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 5)
 			{
-				GameObject.Find("Kitchen_2_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_2_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 3)
 		{
 			if (FurnCont.Kitchen_N == 5)
 			{
-				GameObject.Find("Kitchen_3_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_3_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 6)
 			{
-				GameObject.Find("Kitchen_3_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_3_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 7)
 			{
-				GameObject.Find("Kitchen_3_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_3_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 8)
 			{
-				GameObject.Find("Kitchen_3_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_3_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 4)
@@ -812,19 +812,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 8)
 			{
-				GameObject.Find("Kitchen_4_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_4_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 9)
 			{
-				GameObject.Find("Kitchen_4_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_4_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 10)
 			{
-				GameObject.Find("Kitchen_4_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_4_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 11)
 			{
-				GameObject.Find("Kitchen_4_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_4_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 5)
@@ -832,19 +832,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 11)
 			{
-				GameObject.Find("Kitchen_5_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_5_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 12)
 			{
-				GameObject.Find("Kitchen_5_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_5_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 13)
 			{
-				GameObject.Find("Kitchen_5_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_5_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 14)
 			{
-				GameObject.Find("Kitchen_5_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_5_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 6)
@@ -852,19 +852,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 14)
 			{
-				GameObject.Find("Kitchen_6_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_6_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 15)
 			{
-				GameObject.Find("Kitchen_6_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_6_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 16)
 			{
-				GameObject.Find("Kitchen_6_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_6_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 17)
 			{
-				GameObject.Find("Kitchen_6_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_6_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 7)
@@ -872,19 +872,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 17)
 			{
-				GameObject.Find("Kitchen_7_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_7_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 18)
 			{
-				GameObject.Find("Kitchen_7_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_7_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 19)
 			{
-				GameObject.Find("Kitchen_7_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_7_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("Kitchen_7_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_7_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 8)
@@ -892,19 +892,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("Kitchen_8_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_8_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 21)
 			{
-				GameObject.Find("Kitchen_8_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_8_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 22)
 			{
-				GameObject.Find("Kitchen_8_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_8_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("Kitchen_8_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_8_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -912,19 +912,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("Kitchen_9_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_9_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 24)
 			{
-				GameObject.Find("Kitchen_9_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_9_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 25)
 			{
-				GameObject.Find("Kitchen_9_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_9_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("Kitchen_9_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_9_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -932,19 +932,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("Kitchen_10_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_10_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 27)
 			{
-				GameObject.Find("Kitchen_10_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_10_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 28)
 			{
-				GameObject.Find("Kitchen_10_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_10_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("Kitchen_10_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_10_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -952,19 +952,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("Kitchen_11_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_11_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 30)
 			{
-				GameObject.Find("Kitchen_11_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_11_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 31)
 			{
-				GameObject.Find("Kitchen_11_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_11_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("Kitchen_11_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_11_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -972,19 +972,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("Kitchen_12_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_12_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 33)
 			{
-				GameObject.Find("Kitchen_12_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_12_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 34)
 			{
-				GameObject.Find("Kitchen_12_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_12_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("Kitchen_12_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_12_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -992,19 +992,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("Kitchen_13_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_13_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 36)
 			{
-				GameObject.Find("Kitchen_13_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_13_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 37)
 			{
-				GameObject.Find("Kitchen_13_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_13_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("Kitchen_13_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_13_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -1012,19 +1012,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("Kitchen_14_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_14_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 39)
 			{
-				GameObject.Find("Kitchen_14_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_14_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 40)
 			{
-				GameObject.Find("Kitchen_14_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_14_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("Kitchen_14_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_14_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -1032,19 +1032,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("Kitchen_15_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_15_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 42)
 			{
-				GameObject.Find("Kitchen_15_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_15_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 43)
 			{
-				GameObject.Find("Kitchen_15_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_15_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("Kitchen_15_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_15_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -1052,19 +1052,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("Kitchen_16_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_16_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 45)
 			{
-				GameObject.Find("Kitchen_16_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_16_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 46)
 			{
-				GameObject.Find("Kitchen_16_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_16_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("Kitchen_16_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_16_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 17)
@@ -1072,19 +1072,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("Kitchen_17_1(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_17_1(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 48)
 			{
-				GameObject.Find("Kitchen_17_2(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_17_2(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 49)
 			{
-				GameObject.Find("Kitchen_17_3(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_17_3(Clone)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 50)
 			{
-				GameObject.Find("Kitchen_17_4(Clone)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Kitchen_17_4(Clone)").GetComponent<Button>().interactable = true;
 			}
 		}
 		Sound();
@@ -1187,7 +1187,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plusmp_Table_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (BarCont.st > 0.1f)
 		{
@@ -1306,7 +1306,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plusint_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (TutorialCont.Tutorial_Int == 0)
 		{
@@ -1362,27 +1362,27 @@ public class FurnBtn : MonoBehaviour
 		}
 		if (RoomCont.Room_N >= 3 && RoomCont.Room_N < 8)
 		{
-			GameObject.Find("Toilet (1)").GetComponent<Button>().interactable = false;
+			SceneFind.Find("Toilet (1)").GetComponent<Button>().interactable = false;
 		}
 		if (RoomCont.Room_N == 8)
 		{
 			if (FurnCont.Toilet_N == 20)
 			{
-				GameObject.Find("Toilet (1)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Toilet (1)").GetComponent<Button>().interactable = false;
 			}
 			else
 			{
 				if (FurnCont.Toilet_N == 21)
 				{
-					GameObject.Find("Bath_8_2").GetComponent<Button>().interactable = false;
+					SceneFind.Find("Bath_8_2").GetComponent<Button>().interactable = false;
 				}
 				if (FurnCont.Toilet_N == 22)
 				{
-					GameObject.Find("Bath_8_3").GetComponent<Button>().interactable = false;
+					SceneFind.Find("Bath_8_3").GetComponent<Button>().interactable = false;
 				}
 				if (FurnCont.Toilet_N == 23)
 				{
-					GameObject.Find("Bath_8_4").GetComponent<Button>().interactable = false;
+					SceneFind.Find("Bath_8_4").GetComponent<Button>().interactable = false;
 				}
 			}
 		}
@@ -1390,156 +1390,156 @@ public class FurnBtn : MonoBehaviour
 		{
 			if (FurnCont.Toilet_N == 23)
 			{
-				GameObject.Find("Bath_9_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_9_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 24)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 25)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 26)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 10)
 		{
-			GameObject.Find("Bath (1)").GetComponent<Button>().interactable = false;
+			SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = false;
 		}
 		if (RoomCont.Room_N == 11)
 		{
 			if (FurnCont.Toilet_N == 29)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 30)
 			{
-				GameObject.Find("Bath_11_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_11_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 31)
 			{
-				GameObject.Find("Bath_11_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_11_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 32)
 			{
-				GameObject.Find("Bath_11_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_11_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 12)
 		{
 			if (FurnCont.Toilet_N == 32)
 			{
-				GameObject.Find("Bath_12_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_12_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 33)
 			{
-				GameObject.Find("Bath_12_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_12_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 34)
 			{
-				GameObject.Find("Bath_12_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_12_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 35)
 			{
-				GameObject.Find("Bath_12_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_12_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 13)
 		{
 			if (FurnCont.Toilet_N == 35)
 			{
-				GameObject.Find("Bath_13_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_13_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 36)
 			{
-				GameObject.Find("Bath_13_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_13_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 37)
 			{
-				GameObject.Find("Bath_13_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_13_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 38)
 			{
-				GameObject.Find("Bath_13_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_13_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 14)
 		{
 			if (FurnCont.Toilet_N == 38)
 			{
-				GameObject.Find("Bath_14_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_14_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 39)
 			{
-				GameObject.Find("Bath_14_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_14_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 40)
 			{
-				GameObject.Find("Bath_14_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_14_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 41)
 			{
-				GameObject.Find("Bath_14_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_14_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 15)
 		{
 			if (FurnCont.Toilet_N == 41)
 			{
-				GameObject.Find("Bath_15_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_15_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 42)
 			{
-				GameObject.Find("Bath_15_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_15_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 43)
 			{
-				GameObject.Find("Bath_15_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_15_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 44)
 			{
-				GameObject.Find("Bath_15_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_15_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 16)
 		{
 			if (FurnCont.Toilet_N == 44)
 			{
-				GameObject.Find("Bath_16_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_16_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 45)
 			{
-				GameObject.Find("Bath_16_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_16_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 46)
 			{
-				GameObject.Find("Bath_16_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_16_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 47)
 			{
-				GameObject.Find("Bath_16_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_16_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 17)
 		{
 			if (FurnCont.Toilet_N == 47)
 			{
-				GameObject.Find("Bath_17_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_17_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 48)
 			{
-				GameObject.Find("Bath_17_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_17_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 49)
 			{
-				GameObject.Find("Bath_17_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_17_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Toilet_N == 50)
 			{
-				GameObject.Find("Bath_17_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Bath_17_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("Audio/Increase_bell_2");
@@ -1553,7 +1553,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plusint_bath_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (BarCont.st > 0.1f)
 		{
@@ -1575,27 +1575,27 @@ public class FurnBtn : MonoBehaviour
 		if (RoomCont.Room_N >= 3 && RoomCont.Room_N < 8)
 		{
 			EventCont.Plus_INT = realestateplus;
-			GameObject.Find("Toilet (1)").GetComponent<Button>().interactable = true;
+			SceneFind.Find("Toilet (1)").GetComponent<Button>().interactable = true;
 		}
 		if (RoomCont.Room_N == 8)
 		{
 			if (FurnCont.Toilet_N == 20)
 			{
-				GameObject.Find("Toilet (1)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Toilet (1)").GetComponent<Button>().interactable = true;
 			}
 			else
 			{
 				if (FurnCont.Toilet_N == 21)
 				{
-					GameObject.Find("Bath_8_2").GetComponent<Button>().interactable = true;
+					SceneFind.Find("Bath_8_2").GetComponent<Button>().interactable = true;
 				}
 				if (FurnCont.Toilet_N == 22)
 				{
-					GameObject.Find("Bath_8_3").GetComponent<Button>().interactable = true;
+					SceneFind.Find("Bath_8_3").GetComponent<Button>().interactable = true;
 				}
 				if (FurnCont.Toilet_N == 23)
 				{
-					GameObject.Find("Bath_8_4").GetComponent<Button>().interactable = true;
+					SceneFind.Find("Bath_8_4").GetComponent<Button>().interactable = true;
 				}
 			}
 		}
@@ -1603,156 +1603,156 @@ public class FurnBtn : MonoBehaviour
 		{
 			if (FurnCont.Toilet_N == 23)
 			{
-				GameObject.Find("Bath_9_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_9_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 24)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 25)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 26)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 10)
 		{
-			GameObject.Find("Bath (1)").GetComponent<Button>().interactable = true;
+			SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = true;
 		}
 		if (RoomCont.Room_N == 11)
 		{
 			if (FurnCont.Toilet_N == 29)
 			{
-				GameObject.Find("Bath (1)").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath (1)").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 30)
 			{
-				GameObject.Find("Bath_11_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_11_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 31)
 			{
-				GameObject.Find("Bath_11_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_11_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 32)
 			{
-				GameObject.Find("Bath_11_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_11_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 12)
 		{
 			if (FurnCont.Toilet_N == 32)
 			{
-				GameObject.Find("Bath_12_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_12_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 33)
 			{
-				GameObject.Find("Bath_12_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_12_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 34)
 			{
-				GameObject.Find("Bath_12_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_12_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 35)
 			{
-				GameObject.Find("Bath_12_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_12_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 13)
 		{
 			if (FurnCont.Toilet_N == 35)
 			{
-				GameObject.Find("Bath_13_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_13_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 36)
 			{
-				GameObject.Find("Bath_13_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_13_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 37)
 			{
-				GameObject.Find("Bath_13_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_13_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 38)
 			{
-				GameObject.Find("Bath_13_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_13_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 14)
 		{
 			if (FurnCont.Toilet_N == 38)
 			{
-				GameObject.Find("Bath_14_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_14_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 39)
 			{
-				GameObject.Find("Bath_14_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_14_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 40)
 			{
-				GameObject.Find("Bath_14_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_14_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 41)
 			{
-				GameObject.Find("Bath_14_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_14_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 15)
 		{
 			if (FurnCont.Toilet_N == 41)
 			{
-				GameObject.Find("Bath_15_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_15_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 42)
 			{
-				GameObject.Find("Bath_15_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_15_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 43)
 			{
-				GameObject.Find("Bath_15_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_15_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 44)
 			{
-				GameObject.Find("Bath_15_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_15_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 16)
 		{
 			if (FurnCont.Toilet_N == 44)
 			{
-				GameObject.Find("Bath_16_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_16_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 45)
 			{
-				GameObject.Find("Bath_16_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_16_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 46)
 			{
-				GameObject.Find("Bath_16_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_16_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 47)
 			{
-				GameObject.Find("Bath_16_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_16_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 17)
 		{
 			if (FurnCont.Toilet_N == 47)
 			{
-				GameObject.Find("Bath_17_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_17_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 48)
 			{
-				GameObject.Find("Bath_17_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_17_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 49)
 			{
-				GameObject.Find("Bath_17_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_17_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Toilet_N == 50)
 			{
-				GameObject.Find("Bath_17_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Bath_17_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		Sound();
@@ -1782,7 +1782,7 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 0)
 			{
-				GameObject.Find("Desk_1_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_1_1").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 2)
@@ -1790,19 +1790,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 2)
 			{
-				GameObject.Find("Desk_2_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_2_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 3)
 			{
-				GameObject.Find("Desk_2_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_2_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 4)
 			{
-				GameObject.Find("Desk_2_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_2_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 5)
 			{
-				GameObject.Find("Desk_2_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_2_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 3)
@@ -1810,19 +1810,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 5)
 			{
-				GameObject.Find("Desk_3_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_3_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 6)
 			{
-				GameObject.Find("Desk_3_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_3_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 7)
 			{
-				GameObject.Find("Desk_3_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_3_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 8)
 			{
-				GameObject.Find("Desk_3_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_3_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 4)
@@ -1830,19 +1830,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 8)
 			{
-				GameObject.Find("Desk_4_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_4_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 9)
 			{
-				GameObject.Find("Desk_4_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_4_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 10)
 			{
-				GameObject.Find("Desk_4_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_4_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 11)
 			{
-				GameObject.Find("Desk_4_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_4_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 5)
@@ -1850,19 +1850,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 11)
 			{
-				GameObject.Find("Desk_5_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_5_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 12)
 			{
-				GameObject.Find("Desk_5_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_5_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 13)
 			{
-				GameObject.Find("Desk_5_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_5_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 14)
 			{
-				GameObject.Find("Desk_5_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_5_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 6)
@@ -1870,19 +1870,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 14)
 			{
-				GameObject.Find("Desk_6_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_6_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 15)
 			{
-				GameObject.Find("Desk_6_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_6_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 16)
 			{
-				GameObject.Find("Desk_6_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_6_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 17)
 			{
-				GameObject.Find("Desk_6_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_6_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 7)
@@ -1890,19 +1890,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 17)
 			{
-				GameObject.Find("Desk_7_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_7_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 18)
 			{
-				GameObject.Find("Desk_7_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_7_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 19)
 			{
-				GameObject.Find("Desk_7_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_7_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 20)
 			{
-				GameObject.Find("Desk_7_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_7_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 8)
@@ -1910,19 +1910,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 20)
 			{
-				GameObject.Find("Desk_8_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_8_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 21)
 			{
-				GameObject.Find("Desk_8_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_8_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 22)
 			{
-				GameObject.Find("Desk_8_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_8_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 23)
 			{
-				GameObject.Find("Desk_8_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_8_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -1930,19 +1930,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 23)
 			{
-				GameObject.Find("Desk_9_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_9_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 24)
 			{
-				GameObject.Find("Desk_9_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_9_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 25)
 			{
-				GameObject.Find("Desk_9_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_9_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 26)
 			{
-				GameObject.Find("Desk_9_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_9_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -1950,19 +1950,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 26)
 			{
-				GameObject.Find("Desk_10_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_10_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 27)
 			{
-				GameObject.Find("Desk_10_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_10_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 28)
 			{
-				GameObject.Find("Desk_10_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_10_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 29)
 			{
-				GameObject.Find("Desk_10_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_10_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -1970,19 +1970,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 29)
 			{
-				GameObject.Find("Desk_11_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_11_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 30)
 			{
-				GameObject.Find("Desk_11_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_11_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 31)
 			{
-				GameObject.Find("Desk_11_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_11_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 32)
 			{
-				GameObject.Find("Desk_11_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_11_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -1990,19 +1990,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 32)
 			{
-				GameObject.Find("Desk_12_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_12_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 33)
 			{
-				GameObject.Find("Desk_12_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_12_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 34)
 			{
-				GameObject.Find("Desk_12_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_12_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 35)
 			{
-				GameObject.Find("Desk_12_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_12_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -2010,19 +2010,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 35)
 			{
-				GameObject.Find("Desk_13_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_13_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 36)
 			{
-				GameObject.Find("Desk_13_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_13_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 37)
 			{
-				GameObject.Find("Desk_13_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_13_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 38)
 			{
-				GameObject.Find("Desk_13_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_13_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -2030,19 +2030,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 38)
 			{
-				GameObject.Find("Desk_14_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_14_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 39)
 			{
-				GameObject.Find("Desk_14_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_14_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 40)
 			{
-				GameObject.Find("Desk_14_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_14_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 41)
 			{
-				GameObject.Find("Desk_14_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_14_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -2050,19 +2050,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 41)
 			{
-				GameObject.Find("Desk_15_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_15_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 42)
 			{
-				GameObject.Find("Desk_15_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_15_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 43)
 			{
-				GameObject.Find("Desk_15_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_15_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Bed_N == 44)
 			{
-				GameObject.Find("Desk_15_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_15_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -2070,13 +2070,13 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 44)
 			{
-				GameObject.Find("Desk_16_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("Desk_16_1").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 17)
 		{
 			EventCont.Plus_HAPPY = realestateplus;
-			GameObject.Find("Waterpool").GetComponent<Button>().interactable = false;
+			SceneFind.Find("Waterpool").GetComponent<Button>().interactable = false;
 		}
 		GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("Audio/Increase_bell_2");
 		GetComponent<AudioSource>().Play();
@@ -2089,7 +2089,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plushappy_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (TutorialCont.Tutorial_Int == 0)
 		{
@@ -2118,7 +2118,7 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_MP = realestateplus;
 			if (FurnCont.Bed_N == 0)
 			{
-				GameObject.Find("Desk_1_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_1_1").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 2)
@@ -2126,19 +2126,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 2)
 			{
-				GameObject.Find("Desk_2_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_2_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 3)
 			{
-				GameObject.Find("Desk_2_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_2_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 4)
 			{
-				GameObject.Find("Desk_2_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_2_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 5)
 			{
-				GameObject.Find("Desk_2_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_2_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 3)
@@ -2146,19 +2146,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 5)
 			{
-				GameObject.Find("Desk_3_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_3_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 6)
 			{
-				GameObject.Find("Desk_3_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_3_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 7)
 			{
-				GameObject.Find("Desk_3_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_3_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 8)
 			{
-				GameObject.Find("Desk_3_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_3_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 4)
@@ -2166,19 +2166,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 8)
 			{
-				GameObject.Find("Desk_4_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_4_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 9)
 			{
-				GameObject.Find("Desk_4_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_4_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 10)
 			{
-				GameObject.Find("Desk_4_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_4_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 11)
 			{
-				GameObject.Find("Desk_4_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_4_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 5)
@@ -2186,19 +2186,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 11)
 			{
-				GameObject.Find("Desk_5_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_5_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 12)
 			{
-				GameObject.Find("Desk_5_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_5_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 13)
 			{
-				GameObject.Find("Desk_5_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_5_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 14)
 			{
-				GameObject.Find("Desk_5_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_5_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 6)
@@ -2206,19 +2206,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 14)
 			{
-				GameObject.Find("Desk_6_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_6_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 15)
 			{
-				GameObject.Find("Desk_6_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_6_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 16)
 			{
-				GameObject.Find("Desk_6_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_6_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 17)
 			{
-				GameObject.Find("Desk_6_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_6_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 7)
@@ -2226,19 +2226,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 17)
 			{
-				GameObject.Find("Desk_7_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_7_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 18)
 			{
-				GameObject.Find("Desk_7_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_7_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 19)
 			{
-				GameObject.Find("Desk_7_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_7_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 20)
 			{
-				GameObject.Find("Desk_7_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_7_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 8)
@@ -2246,19 +2246,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 20)
 			{
-				GameObject.Find("Desk_8_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_8_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 21)
 			{
-				GameObject.Find("Desk_8_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_8_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 22)
 			{
-				GameObject.Find("Desk_8_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_8_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 23)
 			{
-				GameObject.Find("Desk_8_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_8_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -2266,19 +2266,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 23)
 			{
-				GameObject.Find("Desk_9_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_9_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 24)
 			{
-				GameObject.Find("Desk_9_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_9_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 25)
 			{
-				GameObject.Find("Desk_9_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_9_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 26)
 			{
-				GameObject.Find("Desk_9_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_9_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -2286,19 +2286,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 26)
 			{
-				GameObject.Find("Desk_10_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_10_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 27)
 			{
-				GameObject.Find("Desk_10_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_10_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 28)
 			{
-				GameObject.Find("Desk_10_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_10_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 29)
 			{
-				GameObject.Find("Desk_10_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_10_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -2306,19 +2306,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 29)
 			{
-				GameObject.Find("Desk_11_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_11_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 30)
 			{
-				GameObject.Find("Desk_11_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_11_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 31)
 			{
-				GameObject.Find("Desk_11_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_11_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 32)
 			{
-				GameObject.Find("Desk_11_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_11_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -2326,19 +2326,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 32)
 			{
-				GameObject.Find("Desk_12_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_12_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 33)
 			{
-				GameObject.Find("Desk_12_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_12_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 34)
 			{
-				GameObject.Find("Desk_12_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_12_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 35)
 			{
-				GameObject.Find("Desk_12_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_12_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -2346,19 +2346,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 35)
 			{
-				GameObject.Find("Desk_13_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_13_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 36)
 			{
-				GameObject.Find("Desk_13_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_13_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 37)
 			{
-				GameObject.Find("Desk_13_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_13_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 38)
 			{
-				GameObject.Find("Desk_13_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_13_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -2366,19 +2366,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 38)
 			{
-				GameObject.Find("Desk_14_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_14_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 39)
 			{
-				GameObject.Find("Desk_14_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_14_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 40)
 			{
-				GameObject.Find("Desk_14_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_14_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 41)
 			{
-				GameObject.Find("Desk_14_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_14_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -2386,19 +2386,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 41)
 			{
-				GameObject.Find("Desk_15_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_15_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 42)
 			{
-				GameObject.Find("Desk_15_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_15_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 43)
 			{
-				GameObject.Find("Desk_15_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_15_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Bed_N == 44)
 			{
-				GameObject.Find("Desk_15_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_15_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -2406,13 +2406,13 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Bed_N == 44)
 			{
-				GameObject.Find("Desk_16_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("Desk_16_1").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 17)
 		{
 			EventCont.Plus_HAPPY = realestateplus;
-			GameObject.Find("Waterpool").GetComponent<Button>().interactable = true;
+			SceneFind.Find("Waterpool").GetComponent<Button>().interactable = true;
 		}
 		Sound();
 	}
@@ -2441,19 +2441,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("TV_8_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_8_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 21)
 			{
-				GameObject.Find("TV_8_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_8_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 22)
 			{
-				GameObject.Find("TV_8_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_8_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("TV_8_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_8_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -2461,19 +2461,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("TV_9_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_9_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 24)
 			{
-				GameObject.Find("TV_9_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_9_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 25)
 			{
-				GameObject.Find("TV_9_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_9_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("TV_9_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_9_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -2481,19 +2481,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("TV_10_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_10_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 27)
 			{
-				GameObject.Find("TV_10_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_10_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 28)
 			{
-				GameObject.Find("TV_10_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_10_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("TV_10_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_10_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -2501,19 +2501,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("TV_11_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_11_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 30)
 			{
-				GameObject.Find("TV_11_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_11_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 31)
 			{
-				GameObject.Find("TV_11_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_11_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("TV_11_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_11_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -2521,19 +2521,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("TV_12_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_12_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 33)
 			{
-				GameObject.Find("TV_12_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_12_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 34)
 			{
-				GameObject.Find("TV_12_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_12_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("TV_12_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_12_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -2541,19 +2541,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("TV_13_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_13_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 36)
 			{
-				GameObject.Find("TV_13_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_13_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 37)
 			{
-				GameObject.Find("TV_13_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_13_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("TV_13_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_13_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -2561,19 +2561,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("TV_14_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_14_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 39)
 			{
-				GameObject.Find("TV_14_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_14_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 40)
 			{
-				GameObject.Find("TV_14_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_14_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("TV_14_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_14_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -2581,19 +2581,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("TV_15_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_15_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 42)
 			{
-				GameObject.Find("TV_15_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_15_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 43)
 			{
-				GameObject.Find("TV_15_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_15_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("TV_15_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_15_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -2601,19 +2601,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("TV_16_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_16_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 45)
 			{
-				GameObject.Find("TV_16_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_16_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 46)
 			{
-				GameObject.Find("TV_16_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_16_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("TV_16_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_16_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		if (RoomCont.Room_N == 17)
@@ -2621,19 +2621,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("TV_17_1").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_17_1").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 48)
 			{
-				GameObject.Find("TV_17_2").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_17_2").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 49)
 			{
-				GameObject.Find("TV_17_3").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_17_3").GetComponent<Button>().interactable = false;
 			}
 			if (FurnCont.Kitchen_N == 50)
 			{
-				GameObject.Find("TV_17_4").GetComponent<Button>().interactable = false;
+				SceneFind.Find("TV_17_4").GetComponent<Button>().interactable = false;
 			}
 		}
 		GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("Audio/Increase_bell_2");
@@ -2647,7 +2647,7 @@ public class FurnBtn : MonoBehaviour
 
 	public void Plushappy_TV_japan()
 	{
-		Actingchar_object = GameObject.Find("ActingChar(Clone)");
+		Actingchar_object = SceneFind.Find("ActingChar(Clone)");
 		Object.DestroyImmediate(Actingchar_object);
 		if (BarCont.st > 0.1f)
 		{
@@ -2671,19 +2671,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 20)
 			{
-				GameObject.Find("TV_8_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_8_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 21)
 			{
-				GameObject.Find("TV_8_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_8_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 22)
 			{
-				GameObject.Find("TV_8_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_8_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("TV_8_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_8_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 9)
@@ -2691,19 +2691,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 23)
 			{
-				GameObject.Find("TV_9_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_9_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 24)
 			{
-				GameObject.Find("TV_9_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_9_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 25)
 			{
-				GameObject.Find("TV_9_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_9_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("TV_9_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_9_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 10)
@@ -2711,19 +2711,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 26)
 			{
-				GameObject.Find("TV_10_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_10_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 27)
 			{
-				GameObject.Find("TV_10_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_10_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 28)
 			{
-				GameObject.Find("TV_10_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_10_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("TV_10_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_10_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 11)
@@ -2731,19 +2731,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 29)
 			{
-				GameObject.Find("TV_11_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_11_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 30)
 			{
-				GameObject.Find("TV_11_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_11_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 31)
 			{
-				GameObject.Find("TV_11_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_11_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("TV_11_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_11_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 12)
@@ -2751,19 +2751,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 32)
 			{
-				GameObject.Find("TV_12_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_12_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 33)
 			{
-				GameObject.Find("TV_12_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_12_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 34)
 			{
-				GameObject.Find("TV_12_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_12_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("TV_12_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_12_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 13)
@@ -2771,19 +2771,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 35)
 			{
-				GameObject.Find("TV_13_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_13_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 36)
 			{
-				GameObject.Find("TV_13_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_13_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 37)
 			{
-				GameObject.Find("TV_13_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_13_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("TV_13_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_13_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 14)
@@ -2791,19 +2791,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 38)
 			{
-				GameObject.Find("TV_14_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_14_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 39)
 			{
-				GameObject.Find("TV_14_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_14_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 40)
 			{
-				GameObject.Find("TV_14_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_14_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("TV_14_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_14_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 15)
@@ -2811,19 +2811,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 41)
 			{
-				GameObject.Find("TV_15_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_15_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 42)
 			{
-				GameObject.Find("TV_15_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_15_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 43)
 			{
-				GameObject.Find("TV_15_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_15_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("TV_15_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_15_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 16)
@@ -2831,19 +2831,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 44)
 			{
-				GameObject.Find("TV_16_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_16_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 45)
 			{
-				GameObject.Find("TV_16_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_16_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 46)
 			{
-				GameObject.Find("TV_16_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_16_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("TV_16_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_16_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		if (RoomCont.Room_N == 17)
@@ -2851,19 +2851,19 @@ public class FurnBtn : MonoBehaviour
 			EventCont.Plus_HAPPY = realestateplus;
 			if (FurnCont.Kitchen_N == 47)
 			{
-				GameObject.Find("TV_17_1").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_17_1").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 48)
 			{
-				GameObject.Find("TV_17_2").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_17_2").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 49)
 			{
-				GameObject.Find("TV_17_3").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_17_3").GetComponent<Button>().interactable = true;
 			}
 			if (FurnCont.Kitchen_N == 50)
 			{
-				GameObject.Find("TV_17_4").GetComponent<Button>().interactable = true;
+				SceneFind.Find("TV_17_4").GetComponent<Button>().interactable = true;
 			}
 		}
 		Sound();

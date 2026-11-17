@@ -37,11 +37,11 @@ public class ResetRoomPrefab : MonoBehaviour
 		s3_7.Lv1_bed = PlayerPrefs.GetInt("Lv1_bed");
 		s3_7.Lv1_toilet = PlayerPrefs.GetInt("Lv1_toilet");
 		s3_7.Lv1_living = PlayerPrefs.GetInt("Lv1_living");
-		GameObject.Find("RoomController/Pet").GetComponent<RoomCont>().Start();
-		GameObject.Find("FurnitureController").GetComponent<FurnCont>().Destoryfurn();
-		GameObject.Find("FurnitureController").GetComponent<FurnCont>().Start();
-		GameObject.Find("SettingWindow").SetActive(false);
-		GameObject.Find("BackBtn_Child").SetActive(false);
+		SceneFind.Find("RoomController/Pet").GetComponent<RoomCont>().Start();
+		SceneFind.Find("FurnitureController").GetComponent<FurnCont>().Destoryfurn();
+		SceneFind.Find("FurnitureController").GetComponent<FurnCont>().Start();
+		SceneFind.Find("SettingWindow").SetActive(false);
+		SceneFind.Find("BackBtn_Child").SetActive(false);
 		bed_num[0] = 0;
 		bed_num[1] = 0;
 		bed_num[2] = 0;
@@ -60,11 +60,11 @@ public class ResetRoomPrefab : MonoBehaviour
 		PlayerPrefs.SetInt("toilet_num[0]", toilet_num[0]);
 		PlayerPrefs.SetInt("toilet_num[1]", toilet_num[1]);
 		PlayerPrefs.SetInt("toilet_num[2]", toilet_num[2]);
-		GameObject.Find("Char").GetComponent<Char>().Start();
+		SceneFind.Find("Char").GetComponent<Char>().Start();
 		s3_7.PetBuyOK = PlayerPrefs.GetInt("PetBuyOK");
 		if (s3_7.PetBuyOK == 1)
 		{
-			GameObject.Find("Pet").GetComponent<PetPosition>().SetPosition();
+			SceneFind.Find("Pet").GetComponent<PetPosition>().SetPosition();
 		}
 		No();
 	}

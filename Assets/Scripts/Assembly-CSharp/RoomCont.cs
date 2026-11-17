@@ -107,7 +107,7 @@ public class RoomCont : MonoBehaviour
 			Prefabs_BG = Resources.Load<Transform>("Room17_BG");
 		}
 		BackImage = Object.Instantiate(Prefabs_BG);
-		room_parent = GameObject.Find("room_parent");
+		room_parent = SceneFind.Find("room_parent");
 		room_parent.transform.localPosition = new Vector3(0f, 0f, 0f);
 		BackImage.transform.SetParent(room_parent.transform);
 		BackImage.transform.localPosition = Prefabs_BG.transform.localPosition;
@@ -116,7 +116,7 @@ public class RoomCont : MonoBehaviour
 		{
 			Prefabs_ect = Resources.Load<Transform>("tree_room17");
 			BackImage2 = Object.Instantiate(Prefabs_ect);
-			ROOM_pet_man_parent = GameObject.Find("room17_ect_p");
+			ROOM_pet_man_parent = SceneFind.Find("room17_ect_p");
 			ROOM_pet_man_parent.transform.localPosition = new Vector3(0f, 0f, 0f);
 			BackImage2.transform.SetParent(ROOM_pet_man_parent.transform);
 			BackImage2.transform.localPosition = Prefabs_ect.transform.localPosition;
