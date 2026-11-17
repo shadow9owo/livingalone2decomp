@@ -64,9 +64,9 @@ public class s3_3 : MonoBehaviour
 		}
 		home_lv.GetComponent<Text>().text = string.Format("{0}", RoomCont.Room_N);
 		Debug.LogFormat("집레벨{0}", RoomCont.Room_N);
-		sprite = Resources.LoadAll<Sprite>("fur_bath");
-		sprite_2 = Resources.LoadAll<Sprite>("fur_ki");
-		sprite_3 = Resources.LoadAll<Sprite>("fur_bath_2");
+		sprite = SheetOrder.LoadAll("fur_bath");
+		sprite_2 = SheetOrder.LoadAll("fur_ki");
+		sprite_3 = SheetOrder.LoadAll("fur_bath_2");
 		bed_num[0] = PlayerPrefs.GetInt("bed_num[0]");
 		bed_num[1] = PlayerPrefs.GetInt("bed_num[1]");
 		bed_num[2] = PlayerPrefs.GetInt("bed_num[2]");

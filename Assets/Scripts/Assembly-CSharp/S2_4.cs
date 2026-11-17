@@ -401,13 +401,13 @@ public class S2_4 : MonoBehaviour
 		Y_class = PlayerPrefs.GetInt("Y_class");
 		M_class = PlayerPrefs.GetInt("M_class");
 		E_class = PlayerPrefs.GetInt("E_class");
-		change_hair = Resources.LoadAll<Sprite>("Head_man");
-		change_hair_2 = Resources.LoadAll<Sprite>("Head_woman");
+		change_hair = SheetOrder.LoadAll("Head_man");
+		change_hair_2 = SheetOrder.LoadAll("Head_woman");
         change_hair_3 = change_hair.Concat(change_hair_2).ToArray();
-        uni_clo_sprite_m = Resources.LoadAll<Sprite>("Clothes_man");
-		uni_clo_sprite_m_2 = Resources.LoadAll<Sprite>("Clothes_man_2");
-		uni_clo_sprite_w = Resources.LoadAll<Sprite>("Clothes_woman");
-		uni_clo_sprite_w_2 = Resources.LoadAll<Sprite>("Clothes_woman_2_moreman");
+        uni_clo_sprite_m = SheetOrder.LoadAll("Clothes_man");
+		uni_clo_sprite_m_2 = SheetOrder.LoadAll("Clothes_man_2");
+		uni_clo_sprite_w = SheetOrder.LoadAll("Clothes_woman");
+		uni_clo_sprite_w_2 = SheetOrder.LoadAll("Clothes_woman_2_moreman");
 		PlayerPrefs.GetFloat("minushairpoint_W", s3_7.minushairpoint_W);
 		cash.GetComponent<Text>().text = string.Format("{0:n0}", scene_controll.gem);
 		for (int j = 0; j < title_name.Length; j++)
@@ -422,7 +422,7 @@ public class S2_4 : MonoBehaviour
 		}
 		if (scene_controll_2.Ptj_N == 4)
 		{
-			uni_sprite = Resources.LoadAll<Sprite>("uni_street");
+			uni_sprite = SheetOrder.LoadAll("uni_street");
 			title_name[2].SetActive(true);
 			Ani_plus_smart.SetActive(false);
 			uni_clothes();
@@ -899,7 +899,7 @@ public class S2_4 : MonoBehaviour
 				ptj_study[m].SetActive(false);
 				ptj_study[1].SetActive(true);
 			}
-			sprite = Resources.LoadAll<Sprite>("ptj_ani_2");
+			sprite = SheetOrder.LoadAll("ptj_ani_2");
 			if ((RoomCont.Room_N == 1) | (RoomCont.Room_N == 0))
 			{
 				month_fee_ = 100000;

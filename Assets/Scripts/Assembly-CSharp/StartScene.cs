@@ -40,8 +40,8 @@ public class StartScene : MonoBehaviour
             Screen.SetResolution(Screen.width, Screen.width * 16 / 9, false);
         }
 			StartConfirm = PlayerPrefs.GetInt("s1_1");
-		sprite = Resources.LoadAll<Sprite>("logo");
-		sprite2 = Resources.LoadAll<Sprite>("talkboxx2");
+		sprite = SheetOrder.LoadAll("logo");
+		sprite2 = SheetOrder.LoadAll("talkboxx2");
 		TutorialCont.Tutorial_Int = PlayerPrefs.GetInt("Tutorial_Int");
 		try
 		{

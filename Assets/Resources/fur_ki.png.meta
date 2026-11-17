@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -132,6 +132,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,18 +178,18 @@ TextureImporter:
       name: fur_ki_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 233
-        width: 24
-        height: 19
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0feec78ff86638e45b0c1212b15e6258
+      spriteID: 5d681d7effffffff0800000000000000
       internalID: -405698859
       vertices: []
       indices: 
@@ -160,18 +199,18 @@ TextureImporter:
       name: fur_ki_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 31
         y: 233
-        width: 24
-        height: 19
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: afa66f39b5e814f449064b0159681347
+      spriteID: 8d588d68ffffffff0800000000000000
       internalID: -2032630312
       vertices: []
       indices: 
@@ -181,18 +220,18 @@ TextureImporter:
       name: fur_ki_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 62
         y: 233
-        width: 26
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 215427406bccd86429929d11f8de967d
+      spriteID: 9a646cd1000000000800000000000000
       internalID: 499533481
       vertices: []
       indices: 
@@ -202,18 +241,18 @@ TextureImporter:
       name: fur_ki_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 93
         y: 233
-        width: 25
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5ca28e9a411f9b545b90d2e5820d3f54
+      spriteID: c76d6135000000000800000000000000
       internalID: 1394005628
       vertices: []
       indices: 
@@ -223,18 +262,18 @@ TextureImporter:
       name: fur_ki_4
       rect:
         serializedVersion: 2
-        x: 127
+        x: 124
         y: 233
-        width: 25
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b16b36df9df7a594a993c60346d04400
+      spriteID: 0ad6768affffffff0800000000000000
       internalID: -1469616736
       vertices: []
       indices: 
@@ -244,18 +283,18 @@ TextureImporter:
       name: fur_ki_5
       rect:
         serializedVersion: 2
-        x: 157
+        x: 155
         y: 233
-        width: 28
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6ea9e8024fae65e4e9f67c37098d6ee1
+      spriteID: c02dfc1cffffffff0800000000000000
       internalID: -1043344884
       vertices: []
       indices: 
@@ -265,18 +304,18 @@ TextureImporter:
       name: fur_ki_6
       rect:
         serializedVersion: 2
-        x: 188
+        x: 186
         y: 233
-        width: 28
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a419cc909147112418ae1cca0c9a5fc3
+      spriteID: 64fa9ae3000000000800000000000000
       internalID: 1051307846
       vertices: []
       indices: 
@@ -286,18 +325,18 @@ TextureImporter:
       name: fur_ki_7
       rect:
         serializedVersion: 2
-        x: 219
+        x: 217
         y: 233
-        width: 28
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ff71a275495d1b04bb3b417ff45edc6d
+      spriteID: fc9e5e3bffffffff0800000000000000
       internalID: -1276778033
       vertices: []
       indices: 
@@ -307,18 +346,18 @@ TextureImporter:
       name: fur_ki_8
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 77cca26f64564a34a8cd7a4019ed7e30
+      spriteID: 619dd4bfffffffff0800000000000000
       internalID: -78784234
       vertices: []
       indices: 
@@ -328,18 +367,18 @@ TextureImporter:
       name: fur_ki_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5dde53e106719484d950303e3b36cd80
+      spriteID: 355e54bfffffffff0800000000000000
       internalID: -79305389
       vertices: []
       indices: 
@@ -349,18 +388,18 @@ TextureImporter:
       name: fur_ki_10
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7850ddbe76988f5478052bd455067b53
+      spriteID: ad336f54000000000800000000000000
       internalID: 1173763034
       vertices: []
       indices: 
@@ -370,18 +409,18 @@ TextureImporter:
       name: fur_ki_11
       rect:
         serializedVersion: 2
-        x: 94
+        x: 93
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b0abdd2b7cf194408fe3be90ee742fe
+      spriteID: 9f38b210000000000800000000000000
       internalID: 19629049
       vertices: []
       indices: 
@@ -391,18 +430,18 @@ TextureImporter:
       name: fur_ki_12
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06fb184760878004a892518206152992
+      spriteID: 4bc83072000000000800000000000000
       internalID: 654544052
       vertices: []
       indices: 
@@ -412,18 +451,18 @@ TextureImporter:
       name: fur_ki_13
       rect:
         serializedVersion: 2
-        x: 156
+        x: 155
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ebecc8a625f6d1241a23906c9eda6055
+      spriteID: 865169eaffffffff0800000000000000
       internalID: -1365895832
       vertices: []
       indices: 
@@ -433,18 +472,18 @@ TextureImporter:
       name: fur_ki_14
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1eb5f746701d15f49bb2d755ad6d2240
+      spriteID: 5ced3f18ffffffff0800000000000000
       internalID: -2114724155
       vertices: []
       indices: 
@@ -454,18 +493,18 @@ TextureImporter:
       name: fur_ki_15
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 210
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1f8a2977ec46af54793faac6cfc4fa0d
+      spriteID: c3114e4effffffff0800000000000000
       internalID: -454815428
       vertices: []
       indices: 
@@ -475,18 +514,18 @@ TextureImporter:
       name: fur_ki_16
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 187
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8dc1eed354eb024982abb2c7def605f
+      spriteID: 25134f65000000000800000000000000
       internalID: 1458843986
       vertices: []
       indices: 
@@ -496,18 +535,18 @@ TextureImporter:
       name: fur_ki_17
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 187
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06e2116f734e09045bb8afbacfaf8420
+      spriteID: abab9ee6000000000800000000000000
       internalID: 1860811450
       vertices: []
       indices: 
@@ -517,18 +556,18 @@ TextureImporter:
       name: fur_ki_18
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 187
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1b0684f34177e7d4eb8df60a340165c4
+      spriteID: ca438345000000000800000000000000
       internalID: 1412969644
       vertices: []
       indices: 
@@ -538,18 +577,18 @@ TextureImporter:
       name: fur_ki_19
       rect:
         serializedVersion: 2
-        x: 94
+        x: 93
         y: 187
-        width: 29
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c2ce90d723f46ae41acf84fb80ab78f3
+      spriteID: 3adc90cdffffffff0800000000000000
       internalID: -603337309
       vertices: []
       indices: 
@@ -559,18 +598,18 @@ TextureImporter:
       name: fur_ki_20
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 187
-        width: 29
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9074d2aff1caa8a45bf77094a5a7c10c
+      spriteID: 1b98ae94000000000800000000000000
       internalID: 1240107441
       vertices: []
       indices: 
@@ -580,18 +619,18 @@ TextureImporter:
       name: fur_ki_21
       rect:
         serializedVersion: 2
-        x: 156
+        x: 155
         y: 187
-        width: 29
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 605ed4def55563c4489b4ad7c15e54d4
+      spriteID: 9919a05dffffffff0800000000000000
       internalID: -720727655
       vertices: []
       indices: 
@@ -601,18 +640,18 @@ TextureImporter:
       name: fur_ki_22
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 187
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8036bcac07268bf4eaae71029729d89a
+      spriteID: 7e2ca789ffffffff0800000000000000
       internalID: -1736785177
       vertices: []
       indices: 
@@ -622,18 +661,18 @@ TextureImporter:
       name: fur_ki_23
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 187
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b181f268889b5d4faea007751639e7d
+      spriteID: 424611e7000000000800000000000000
       internalID: 2115068964
       vertices: []
       indices: 
@@ -643,18 +682,18 @@ TextureImporter:
       name: fur_ki_24
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 164
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 931cdd3ddd5d46047afd8c77169eef04
+      spriteID: 21c95366000000000800000000000000
       internalID: 1714789394
       vertices: []
       indices: 
@@ -664,18 +703,18 @@ TextureImporter:
       name: fur_ki_25
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 164
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e9434cc8b8bd7154880166e666841321
+      spriteID: b4f4273cffffffff0800000000000000
       internalID: -1015918773
       vertices: []
       indices: 
@@ -685,18 +724,18 @@ TextureImporter:
       name: fur_ki_26
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 164
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c7ece80c4d63fec4289ef038edd894ef
+      spriteID: c2efc891000000000800000000000000
       internalID: 428670508
       vertices: []
       indices: 
@@ -706,18 +745,18 @@ TextureImporter:
       name: fur_ki_27
       rect:
         serializedVersion: 2
-        x: 94
+        x: 93
         y: 164
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8be60b9a3acd31d408c7e30aa4f325b5
+      spriteID: 973da2f5000000000800000000000000
       internalID: 1596642169
       vertices: []
       indices: 
@@ -727,18 +766,18 @@ TextureImporter:
       name: fur_ki_28
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 164
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7dd84d51d52bfa543a22febbfba4f84c
+      spriteID: 6470ea74000000000800000000000000
       internalID: 1202587462
       vertices: []
       indices: 
@@ -748,18 +787,18 @@ TextureImporter:
       name: fur_ki_29
       rect:
         serializedVersion: 2
-        x: 156
+        x: 155
         y: 164
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ab5057d2c8c20f4489388feb4f140fde
+      spriteID: 291c2a1fffffffff0800000000000000
       internalID: -240991854
       vertices: []
       indices: 
@@ -769,18 +808,18 @@ TextureImporter:
       name: fur_ki_30
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 164
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b3f7c0e546d67994da52b265b80758a4
+      spriteID: 141f29c1000000000800000000000000
       internalID: 479392065
       vertices: []
       indices: 
@@ -790,18 +829,18 @@ TextureImporter:
       name: fur_ki_31
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 164
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 243f7865e7b609e43a3fa3e97349d8b6
+      spriteID: cb27887affffffff0800000000000000
       internalID: -1484229956
       vertices: []
       indices: 
@@ -811,18 +850,18 @@ TextureImporter:
       name: fur_ki_32
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 69b5ec437e84caf4b9b9ee4c358a76aa
+      spriteID: d8016426000000000800000000000000
       internalID: 1648758925
       vertices: []
       indices: 
@@ -832,18 +871,18 @@ TextureImporter:
       name: fur_ki_33
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e6b85914810c44a42844945e829ed64c
+      spriteID: 112b11beffffffff0800000000000000
       internalID: -351161839
       vertices: []
       indices: 
@@ -853,18 +892,18 @@ TextureImporter:
       name: fur_ki_34
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ce32e2cc77af82c4bad20af04fedb6ad
+      spriteID: 3e6ce0f6000000000800000000000000
       internalID: 1863239395
       vertices: []
       indices: 
@@ -874,18 +913,18 @@ TextureImporter:
       name: fur_ki_35
       rect:
         serializedVersion: 2
-        x: 94
+        x: 93
         y: 141
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 53b288246491a694b99df89c1823ec7c
+      spriteID: 89dede8dffffffff0800000000000000
       internalID: -655495784
       vertices: []
       indices: 
@@ -895,18 +934,18 @@ TextureImporter:
       name: fur_ki_36
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 141
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 95ce19dce4904814fb164234717f3b36
+      spriteID: 9b2c969fffffffff0800000000000000
       internalID: -110509383
       vertices: []
       indices: 
@@ -916,18 +955,18 @@ TextureImporter:
       name: fur_ki_37
       rect:
         serializedVersion: 2
-        x: 156
+        x: 155
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1d438c720451e4d4ca8e542f0570c0b1
+      spriteID: 757911f5000000000800000000000000
       internalID: 1594988375
       vertices: []
       indices: 
@@ -937,18 +976,18 @@ TextureImporter:
       name: fur_ki_38
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 82ae1133033dc0740b5665ea62cbdbd5
+      spriteID: 3a69fbecffffffff0800000000000000
       internalID: -826304861
       vertices: []
       indices: 
@@ -958,18 +997,18 @@ TextureImporter:
       name: fur_ki_39
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 141
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 56c729f110b0e2649886f59bbe4fb796
+      spriteID: 307e0bf4000000000800000000000000
       internalID: 1336993539
       vertices: []
       indices: 
@@ -979,18 +1018,18 @@ TextureImporter:
       name: fur_ki_40
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c37379148ebc6d940b3a7b7840a6fce9
+      spriteID: 5f182beeffffffff0800000000000000
       internalID: -290291211
       vertices: []
       indices: 
@@ -1000,18 +1039,18 @@ TextureImporter:
       name: fur_ki_41
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: df00df3e387b0f846b8626bc110eb634
+      spriteID: adb8d2feffffffff0800000000000000
       internalID: -282227750
       vertices: []
       indices: 
@@ -1021,18 +1060,18 @@ TextureImporter:
       name: fur_ki_42
       rect:
         serializedVersion: 2
-        x: 63
+        x: 62
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3cfb07ec15c8e824aa21c1dda8305774
+      spriteID: 0fa1be39ffffffff0800000000000000
       internalID: -1813308688
       vertices: []
       indices: 
@@ -1042,18 +1081,18 @@ TextureImporter:
       name: fur_ki_43
       rect:
         serializedVersion: 2
-        x: 94
-        y: 119
-        width: 30
-        height: 21
+        x: 93
+        y: 118
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f1530b446af38d6459fe2d12e5add677
+      spriteID: b6f5caefffffffff0800000000000000
       internalID: -22257813
       vertices: []
       indices: 
@@ -1063,18 +1102,18 @@ TextureImporter:
       name: fur_ki_44
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7e7ba2862907dbf48815c1bf0b41a280
+      spriteID: 09bd14f9ffffffff0800000000000000
       internalID: -1623073904
       vertices: []
       indices: 
@@ -1084,18 +1123,18 @@ TextureImporter:
       name: fur_ki_45
       rect:
         serializedVersion: 2
-        x: 156
+        x: 155
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 70ac1b80edac1fd44a55e9486c4bffc2
+      spriteID: 90338219ffffffff0800000000000000
       internalID: -1859636471
       vertices: []
       indices: 
@@ -1105,18 +1144,18 @@ TextureImporter:
       name: fur_ki_46
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 118
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6d8343cefdeb7654fbe786c1f44c3393
+      spriteID: cc49e555000000000800000000000000
       internalID: 1432261836
       vertices: []
       indices: 
@@ -1126,18 +1165,18 @@ TextureImporter:
       name: fur_ki_47
       rect:
         serializedVersion: 2
-        x: 218
+        x: 217
         y: 118
-        width: 29
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b9ef098da2ceb5246a9d936d8a881c0b
+      spriteID: 31c2c205000000000800000000000000
       internalID: 1345072147
       vertices: []
       indices: 
@@ -1147,18 +1186,18 @@ TextureImporter:
       name: fur_ki_48
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 95
-        width: 30
-        height: 22
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e46c5fa9355843640bc66815df5a4820
+      spriteID: 06a147f2000000000800000000000000
       internalID: 796138080
       vertices: []
       indices: 
@@ -1168,18 +1207,18 @@ TextureImporter:
       name: fur_ki_49
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 95
-        width: 30
-        height: 20
+        width: 31
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d4bff1c04ae4a674bbebccfb13347524
+      spriteID: b1d26decffffffff0800000000000000
       internalID: -824824549
       vertices: []
       indices: 

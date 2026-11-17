@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/Start.unity
+    guid: 310b8cad4489ae54b81ef9337a02fb85
+  - enabled: 1
+    path: Assets/Scene/char_select.unity
+    guid: 6c192524826b65842b05c51799eb203f
+  - enabled: 1
+    path: Assets/Scene/newone.unity
+    guid: 309b3d3a404d66343abc55e9f53b5177
+  - enabled: 1
+    path: Assets/Scene/newone2.unity
+    guid: e5092bd6c426a8d4586aab5e75ae9f12
+  - enabled: 1
+    path: Assets/Scene/ptj.unity
+    guid: 471b09f444d6ea64381df04daea0c91a
+  - enabled: 1
+    path: Assets/Scene/Cashshop.unity
+    guid: 48827748b2b8d5344b8cd76154899770
+  - enabled: 1
+    path: Assets/Scene/Rebirth.unity
+    guid: 9f8a82cf270f783409e673a250f646d6
+  - enabled: 1
+    path: Assets/Scene/ending.unity
+    guid: ac584397923105047bfdc9e9470a542a
+  m_configObjects: {}
