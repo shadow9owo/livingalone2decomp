@@ -55,6 +55,40 @@ public static class PortBuild
         PlayerSettings.allowedAutorotateToLandscapeRight = false;
         PlayerSettings.allowedAutorotateToPortraitUpsideDown = false;
         PlayerSettings.runInBackground = false;
+        ApplyIcon();
+    }
+
+    // Original launcher icon, taken from the 1.0.1 APK (res/drawable-xxxhdpi-v4/app_icon.png, 192px).
+    const string IconPath = "Assets/Icon/app_icon.png";
+
+    static void ApplyIcon()
+    {
+        var imp = (TextureImporter)AssetImporter.GetAtPath(IconPath);
+        if (imp == null) throw new FileNotFoundException("Icon missing: " + IconPath);
+        if (imp.textureType != TextureImporterType.Default || imp.mipmapEnabled || !imp.isReadable ||
+            imp.textureCompression != TextureImporterCompression.Uncompressed)
+        {
+            imp.textureType = TextureImporterType.Default;
+            imp.mipmapEnabled = false;
+            imp.isReadable = true;
+            imp.filterMode = FilterMode.Point;
+            imp.textureCompression = TextureImporterCompression.Uncompressed;
+            imp.SaveAndReimport();
+        }
+        var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(IconPath);
+
+        // Default (all platforms, incl. the Windows exe and window)
+        PlayerSettings.SetIconsForTargetGroup(BuildTargetGroup.Unknown, new[] { icon });
+        PlayerSettings.SetIconsForTargetGroup(BuildTargetGroup.Standalone,
+            Enumerable.Repeat(icon, PlayerSettings.GetIconSizesForTargetGroup(BuildTargetGroup.Standalone).Length).ToArray());
+
+        // Android legacy + round launcher icons, every density
+        foreach (var kind in new[] { UnityEditor.Android.AndroidPlatformIconKind.Legacy, UnityEditor.Android.AndroidPlatformIconKind.Round })
+        {
+            var icons = PlayerSettings.GetPlatformIcons(UnityEditor.Build.NamedBuildTarget.Android, kind);
+            foreach (var pi in icons) pi.SetTexture(icon);
+            PlayerSettings.SetPlatformIcons(UnityEditor.Build.NamedBuildTarget.Android, kind, icons);
+        }
     }
 
     [MenuItem("Port/Build Windows")]
